@@ -4,10 +4,10 @@
 
  *{
  margin: 0;
-  box-sizing: border-box;
-
-
+ box-sizing: border-box;
+ scroll-behavior: smooth;
 }
+
 
 body {
    font-family: 'Poppins', sans-serif;
@@ -731,4 +731,36 @@ header .navbar ul li a{
   max-width: 100%;
   font-size: 15px;
 }
+}
+
+
+
+
+.to_top {
+  background: #ffffff;
+  position: fixed;
+  bottom: 16px;
+  right:32px;
+  width:50px;
+  height:50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size:32px;
+  color:#00153d;
+  text-decoration: none;
+  opacity:0;
+  pointer-events: none;
+  transition: all .4s;
+}
+
+.to_top.active {
+  bottom:32px;
+  pointer-events: auto;
+  opacity:1;
+}
+.to_top:hover{
+  background-color: #00153d;
+  color:  #ffffff;
 }

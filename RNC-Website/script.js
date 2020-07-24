@@ -1,29 +1,26 @@
-//sticky navbar
+//---------------scroll to top----------------//
 
-window.onscroll=function(){
-	const docScrollTop=document.documentElement.scrollTop;
-	 if (window.innerWidth>991){
-	 	if(docScrollTop>100){
-	 		document.querySelector("header").classList.add("fixed");
-	 	}
-	 	else{
-	 		document.querySelector("header").classList.remove("fixed");
+const toTop = document.querySelector(".to_top");
 
-	 	}
+window.addEventListener("scroll", () => {
+  if (window.pageYOffset > 100) {
+    toTop.classList.add("active");
+  } else {
+    toTop.classList.remove("active");
+  }
+})
 
-	 }
-
-
-}
+//---------------end scroll to top----------------//
 
 
+//---------------start  blog----------------//
 //Modals for blogs
 
 // Get the modal
 var modal = document.getElementById("myModal");
 
 // Get the button that opens the modal
-var btn = document.getElementById("myBtn");
+var btn = document.getElementById("post1");
 
 // Get the <span> element that closes the modal
 var span = document.getElementsByClassName("close")[0];
