@@ -1,0 +1,235 @@
+.heading {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("images/bg.jpg");
+  min-height: 300px;
+  padding: 25px;
+}
+
+
+.heading .headingcontent{
+  display:flex;
+  flex-wrap:  wrap; 
+  align-items:  center; 
+  min-height: 300px;
+  padding-top: 180px;
+}
+
+.heading .headingcontent .block{
+  flex:0 0 100%;
+  max-width: 100%;
+  padding-left: 35px;
+  border-left: 5px solid #66fcf1
+}
+
+
+.heading .headingcontent .block h1{
+  color:#ffffff;
+  font-size:  60px;
+  font-weight:600;
+  margin: 0;
+  padding: 0;
+}
+
+
+.blogs{
+  padding:100px 15px;
+  background-color: #e5e5e5;
+}
+
+
+.blogs .blogcontent{
+  flex: 0 0 100%;
+  max-width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+}
+
+.blogs .blogcontent .box{
+  background-color: #ffffff;
+  flex: 0 0 calc(33.33%-25px);
+  max-width: calc(33.33%-25px);
+  padding: 15px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+.blogs .blogcontent .box img{
+  width:100%;
+  display: block;
+}
+
+.blogs .blogcontent .box .info {
+  padding: 10px 0;
+}
+
+.blogs .blogcontent .box .info span{
+  font-size: 12px;
+  color:#838383;
+  display: inline-block;
+}
+
+.blogs .blogcontent .box .info span:nth-child(2){
+  border-left: 1px solid #dddddd;
+  padding-left: 8px;
+  margin-right: 10px;
+}
+
+.blogs .blogcontent .box h3{
+  font-size: 22px;
+  font-weight: 600;
+  color:#000000;
+  margin: 0 0 10px;
+  padding: 0;
+
+}
+
+.blogs .blogcontent .box p{
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 24px;
+  color:#838383;
+  margin: 0 0 10px;
+}
+
+.blogs .blogcontent .box a{
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color:#febd01;
+  text-decoration: none;
+  display: inline-block;
+  border-bottom: 2px solid #febd01;
+  -webkit-transition:all .5s ease;
+  transition: all .5s ease;
+}
+
+.blogs .blogcontent .box a:hover{
+  color:#999;
+  border-color: #000000;
+}
+
+
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+
+
+
+
+
+
+.team{
+  width: auto;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 30px;
+}
+
+.team .member{
+  width: 250px;
+  margin: 5px;
+  background: #fff;
+  padding: 20px 10px;
+}
+
+.team .member img{
+  border-radius: 50%;
+}
+
+.team .member .member_img{
+  background: #e5e5e5;  
+  max-width: 190px;
+  width: 100%;
+  height: 190px;
+  margin: 0 auto;
+  border-radius: 50%;
+  padding: 5px;
+  position: relative;
+  cursor: pointer;
+}
+
+.team .member .member_img img{
+  width: 100%;
+  height: 100%;
+}
+
+.team .member h3{
+  text-transform: uppercase;
+  font-size: 18px;
+  line-height: 18px;
+  letter-spacing: 2px;
+  margin: 15px 0 0px;
+}
+
+.team .member .member_img .social_media{
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  background: rgba(0,0,0,0.65);
+  width: 95%;
+  height: 95%;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: scale(0);
+  transition: all 0.5s ease;
+}
+
+.team .member .member_img .social_media .item{
+  margin: 0 10px;
+}
+
+.team .member .member_img .social_media .fa{
+  color: #e5e5e5;
+  font-size: 20px;
+}
+
+.team .member .member_img:hover .social_media{
+  transform: scale(1);
+}
+
