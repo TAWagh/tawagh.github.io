@@ -232,7 +232,7 @@ right:30%;
 
 
 .about{
-background-color: #E5E5E5;
+background-color: #E8EDDF;
 padding:70px 0px 70px;
 }
 
@@ -254,7 +254,7 @@ left: 30%;
 }
 
 .about  .visioncontent .box{
-  background-color: #E5E5E5;
+  background-color: #E8EDDF;
   flex: 0 0 calc(33.33% - 20px);
   text-align: center;
   position:relative;
@@ -328,7 +328,7 @@ left: 30%;
 }
 
 .work{
-background-color: #E5E5E5;
+background-color: #E8EDDF;
 padding:70px 0px 70px;
 }
 
@@ -469,7 +469,7 @@ left: 30%;
   }
 
 .activities{
-background-color: #E5E5E5;
+background-color: #E8EDDF;
 padding:70px 0px 70px;
 }
 
@@ -540,7 +540,7 @@ left: 30%;
   background-size: cover;
   background-image: url("images/bg.jpg"); 
   color: white;
-  padding: 40px;
+  padding:50px 15px;
 }
 
 .contact h1{
@@ -567,7 +567,7 @@ left: 30%;
       background:#111; 
       border-color: #111;
       outline: none;
-      color: #E5E5E5;
+      color: #E8EDDF;
       transition: 0.5s ;
       }
 
@@ -602,9 +602,8 @@ left: 30%;
   
 
 
-
 footer {
-  padding:60px 15px;
+  padding:50px 15px;
   background-color: black;
   color: #777;
   line-height: 1.5;
@@ -617,23 +616,47 @@ footer .logo {
 footer .social {
   flex: 0 0 100%;
   max-width: 100%;
-  padding-top: 10px;
+  padding-bottom: 5px;
+}
+
+footer .social .sm_icons{
+  height:30px;
+  width: 30px;
+  background-color: #1d1d27;
+  border-radius: 50%;
+  text-align: center;
+}
+
+footer .social .sm_icons .fa{
+ padding-top: 7px;
 }
 
 footer .social a {
-  color: #ffff;
-  margin: 8px;
-  text-decoration: none;
+  color: #ffffff;
   display: inline-block;
   transition: all .5s ease;
+  margin: 8px;
 }
 
 footer .social a:hover {
-  color: #66fcf1;
+ color: #66fcf1;
 }
 
+.name{
+ background-color: black;
+ text-align:right;
+ border-top: 1px solid #1d1d27;
+ padding: 10px
+}
 
+ .name p{
+ color:  #777;	
+ font-size: 12px;
+}
 
+ .name i{
+ color:  #66fcf1;	
+}
 
 
 
