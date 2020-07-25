@@ -246,7 +246,7 @@ left: 30%;
 }
 
 .vision{
-background-color: #E8EDDF;
+background-color: #F5F7F9;
 padding:55px 0px 55px;
 }
 
@@ -368,7 +368,7 @@ bottom: 0px;
 }
 
 .work{
-background-color: #ffffff;
+background-color: #F5F7F9;
 padding:70px 0px 70px;
 }
 
@@ -386,14 +386,13 @@ left: 30%;
 }
 
 .work .workcontent .box{
-  background-color: #E8EDDF;
+  background-color: #fff;
   padding: 30px;
   flex: 0 0 calc(33.33% - 20px);
   max-width: : 0 0 calc(33.33% - 20px);
   margin-bottom: 30px;
   border-radius: 1px solid #eeeeee;
-
-  box-shadow:4px 4px 10px grey;
+  box-shadow:4px 4px 7px #666;
   text-align: center;
   position:relative;
   border-radius: 5px;
@@ -403,7 +402,7 @@ left: 30%;
 .work .workcontent .box::before{
   content:'';
   position:absolute;
-  height: 2px;
+  height: 5px;
   background-color: #febd01;
   bottom: 0px;
   width: 60px;
