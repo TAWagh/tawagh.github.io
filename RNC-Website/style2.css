@@ -36,7 +36,7 @@
 
 .blogs{
   padding:100px 15px;
-  background-color: #e5e5e5;
+  background-color: #E8EDDF;
 }
 
 
@@ -167,12 +167,13 @@
   justify-content: center;
   flex-wrap: wrap;
   padding: 30px;
+  background:#E8EDDF;
 }
 
 .team .member{
   width: 250px;
   margin: 5px;
-  background: #fff;
+  background: #E8EDDF;
   padding: 20px 10px;
 }
 
@@ -181,7 +182,7 @@
 }
 
 .team .member .member_img{
-  background: #e5e5e5;  
+  background: #E8EDDF;  
   max-width: 190px;
   width: 100%;
   height: 190px;
@@ -225,7 +226,7 @@
 }
 
 .team .member .member_img .social_media .fa{
-  color: #e5e5e5;
+  color: #E8EDDF;
   font-size: 20px;
 }
 
