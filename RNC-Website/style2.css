@@ -156,24 +156,18 @@
 
 
 
-
-
-
-
-
 .team{
   width: auto;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   padding: 30px;
-  background:#E8EDDF;
 }
 
 .team .member{
   width: 250px;
   margin: 5px;
-  background: #E8EDDF;
+  background: #ffffff;
   padding: 20px 10px;
 }
 
