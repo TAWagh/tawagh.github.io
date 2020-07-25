@@ -1,3 +1,4 @@
+
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css');
 
@@ -510,7 +511,7 @@ left: 30%;
   }
 
 .activities{
-background-color: #E8EDDF;
+background-color: #F5F7F9;
 padding:70px 0px 70px;
 }
 
@@ -608,7 +609,7 @@ left: 30%;
       background:#111; 
       border-color: #111;
       outline: none;
-      color: #E8EDDF;
+      color: #F5F7F9;
       transition: 0.5s ;
       }
 
