@@ -234,9 +234,24 @@ left: 30%;
 
 .about  .aboutcontent{
   padding: 15px;
-  text-align:center;
 }
 
+.about  .aboutcontent img{
+  height: 50vh;
+  padding-right:100px ;
+  float: left;
+}
+
+.about  .aboutcontent h2{
+padding-top: 20px;
+font-size: 30px;
+font-weight:400; 
+}
+
+.about  .aboutcontent p{
+font-size: 16px;
+text-align: justify;
+}
 .vision{
 background-color: #F5F7F9;
 padding:55px 0px 55px;
