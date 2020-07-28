@@ -1,0 +1,135 @@
+.heading {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("images/bg.jpg");
+  min-height: 300px;
+  padding: 25px;
+}
+
+
+.heading .headingcontent{
+  display:flex;
+  flex-wrap:  wrap; 
+  align-items:  center; 
+  min-height: 300px;
+  padding-top: 180px;
+}
+
+.heading .headingcontent .block{
+  flex:0 0 100%;
+  max-width: 100%;
+  padding-left: 35px;
+  border-left: 5px solid #66fcf1
+}
+
+
+.heading .headingcontent .block h1{
+  color:#ffffff;
+  font-size:  60px;
+  font-weight:600;
+  margin: 0;
+  padding: 0;
+}
+
+
+.blogs{
+  background-color: #f5f7f9;
+}
+
+
+.blogs .blogcontent{
+  padding: 50px 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  grid-gap: 20px;
+  align-items: stretch;
+}
+
+.blogs .blogcontent .card{
+box-shadow:4px 4px 7px #666;
+  background-color: #ffffff;
+  max-height: : 550px;
+}
+
+.blogs .blogcontent .card .img img{
+  max-width: 100%;
+}
+
+
+.blogs .blogcontent .card .info {
+  padding: 10px;
+}
+
+.blogs .blogcontent .card .info h3{
+  font-size: 22px;
+  font-weight: 600;
+  color:#000000;
+
+}
+
+.blogs .blogcontent .card .info p{
+  font-size: 15px;
+  font-weight: 400;
+  color:#838383;
+  margin: 0 0 10px;
+}
+
+.blogs .blogcontent .card .info a{
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color:#febd01;
+  text-decoration: none;
+  display: inline-block;
+  border-bottom: 2px solid #febd01;
+  -webkit-transition:all .5s ease;
+  transition: all .5s ease;
+}
+
+.blogs .blogcontent .card .info a:hover{
+  color:#00153d;
+  border-color: #000000;
+}
+
+
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
