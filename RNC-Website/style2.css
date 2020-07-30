@@ -42,7 +42,7 @@
 
 /**********Project Gallary**********/
 .gallery{
-  background-color: #F5F7F9;
+  background-color: #FFFFFF;
   padding: 70px 20px;
 }
 
@@ -58,7 +58,7 @@
   overflow: hidden;
   text-align: center;
   box-shadow:4px 4px 7px #666;
-  background-color: #222;
+  background-color: #111111;
 }
 
 .item:hover{
@@ -77,13 +77,20 @@
   opacity: 0.3;
 }
 
+.item h2 {
+  font-size: 22px;
+  font-weight: 600;
+  color:#ffffff;
+  padding-bottom: 5px;
+}
+
 .text{
   width: 80%;
   height: 90%;
   position: absolute;
   top: -100px;
   left: 10%;
-  color: #01A2AC;
+  color: #66fcf1;
 }
 
 .text h3{
@@ -103,7 +110,7 @@
   bottom: -100px;
   left: 25%;
   width: 50%;
-  border: 3px solid #01A2AC;
+  border: 3px solid #66fcf1;
   padding: 15px;
   box-sizing: border-box;
   transition: all 0.3s ease-in-out;
@@ -111,8 +118,9 @@
 }
 
 .button:hover{
-  background-color: #01A2AC;
+  background-color: #66fcf1;
   color: #F5F5F5;
+  color: black;
 }
 
 /* Modal */
