@@ -1,3 +1,23 @@
+//---------------hamburger----------------//
+const navbar = document.querySelector(".navbar");
+a=navbar.querySelectorAll("a");
+a.forEach(function(element){
+
+element.addEventListener("click",function(){
+  document.querySelector(".navbar").classList.toggle("show");
+})
+
+})
+const hamBurger = document.querySelector(".ham-burger");
+
+hamBurger.addEventListener("click",function(){
+  document.querySelector(".navbar").classList.toggle("show");
+})
+//---------------hamburger----------------//
+
+
+
+
 //---------------scroll to top----------------//
 
 const toTop = document.querySelector(".to_top");
@@ -9,7 +29,6 @@ window.addEventListener("scroll", () => {
     toTop.classList.remove("active");
   }
 })
-
 //---------------end scroll to top----------------//
 
 
