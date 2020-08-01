@@ -1,0 +1,111 @@
+/*********NAVBAR*********/
+.ham-burger .fa{
+  font-size: 20px;
+  height: 27px;
+  width: 35px;
+  color: #66fcf1;
+  border: 1px solid #66fcf1;
+  background-color: transparent;
+  border-radius: 3px;
+  line-height: 27px;
+  text-align: center;
+  cursor: pointer;
+  display: none;
+}
+
+@media(max-width: 900px){
+
+  header{
+    padding: 15px;
+    position: fixed;
+    background: rgba(0, 0, 0, 0.8);
+  }
+header img {
+height: 45px;
+}
+ .ham-burger .fa{
+  display:inline-block;
+}
+
+.navbar{
+    position:absolute;
+    width: 100%;
+    left: 0px;
+    top: 60px;
+    padding: 15px;
+    background-color: #000000;
+    display: none;
+  }
+
+  .navbar.show{
+  display: block;
+  }
+
+  header .navbar ul li {
+   display: block;
+   margin-left: 0;
+  }
+
+  header .navbar ul li a{
+   line-height: 42px;
+  }
+
+}
+
+/*LANDING SCREEN*/
+
+@media(max-width: 550px){
+.home .homecontent .block h6{
+  font-size:  12px;
+}
+.home .homecontent .block h1{
+  font-size:  50px;
+}
+.home .homecontent .block h4{
+  font-size:  20px;
+}
+
+}
+
+
+@media(max-width: 680px){
+
+.work .workcontent .box{
+  flex: 0 0 100%;
+  max-width: : 0 0 100%;
+ }
+
+.quote .quotecontent p{
+  font-size: 20px;
+}
+
+
+.contact .left{
+  flex: 0 0 100%;
+  max-width: 100%; 
+}
+.contact .right{
+  flex: 0 0 100%;
+  max-width: 100%; 
+  padding-top: 50px;
+}
+
+.name{
+ text-align:center;
+}
+}
+
+
+@media(max-width: 820px){
+
+.vedanth .v{
+  font-size: 40px;
+}
+
+.vedanth .text{
+  flex: 0 0 100%;
+  max-width: 100%;
+  font-size: 15px;
+}
+}
+
