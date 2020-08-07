@@ -80,10 +80,15 @@ flex:0 0 100%;
 }
 
 .about  .aboutcontent .text {
-  text-align: center;
  flex:0 0 100%;
  max-width: 100%;
-  padding: 15px;
+ padding: 15px;
+}
+.about  .aboutcontent .text h2{
+text-align: center; 
+}
+.about  .aboutcontent .text p{
+text-align:   center; 
 }
 }
 
@@ -112,26 +117,18 @@ flex:0 0 100%;
 
 .vision  .visioncontent img{
   padding: 5px;
-  height: 30px;
+  height: 35px;
 }
 
 .vision  .visioncontent .box1{
-  text-align: center;
   margin-right: 0%;
   margin-left: 0px;
 }
 
 .vision  .visioncontent .box2{
-  text-align: center;
    margin-left: 0%;
 }
 
-.vision  .visioncontent h2{
-text-align: center;
-}
-.vision  .visioncontent .right {
-text-align: center;
-}
 
 .vision  .visioncontent p{
 padding-bottom: 30px;
