@@ -1,0 +1,267 @@
+.heading {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("../images/bg.jpg");
+  min-height: 300px;
+  padding: 25px;
+}
+
+
+.heading .headingcontent{
+  display:flex;
+  flex-wrap:  wrap; 
+  align-items:  center; 
+  min-height: 300px;
+  padding-top: 180px;
+}
+
+.heading .headingcontent .block{
+  flex:0 0 100%;
+  max-width: 100%;
+  padding-left: 35px;
+  border-left: 5px solid #66fcf1
+}
+
+
+.heading .headingcontent .block h1{
+  color:#ffffff;
+  font-size:  60px;
+  font-weight:600;
+  margin: 0;
+  padding: 0;
+}
+.heading .headingcontent .block h4{
+  color:#ffffff;
+  font-size:  30px;
+  font-weight:400;
+  margin: 0;
+  padding: 0;
+}
+
+/**********Project Gallary**********/
+.gallery{
+  background-color: #FFFFFF;
+  padding: 70px 20px;
+}
+
+.gallerycontent {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  grid-gap: 35px;
+  align-items: stretch;
+}
+
+.item {
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+  box-shadow:4px 4px 7px #666;
+  background-color: #111111;
+}
+
+.item:hover{
+  cursor: pointer;
+}
+
+.item *{
+  transition: all 0.35s ease-in-out;
+}
+
+.item img { 
+  width: 100%;
+}
+
+.item:hover img {
+  opacity: 0.3;
+}
+
+.item h2 {
+  font-size: 22px;
+  font-weight: 600;
+  color:#ffffff;
+  padding-bottom: 5px;
+}
+
+.text{
+  width: 80%;
+  height: 90%;
+  position: absolute;
+  top: -100px;
+  left: 10%;
+  color: #66fcf1;
+}
+
+.text h3{
+  color: #fff;
+}
+
+.item:hover .text{
+  top: 30%;
+}
+
+.item:hover .button{
+  bottom: 30%;
+}
+
+.item .button{
+  position: absolute;
+  bottom: -100px;
+  left: 25%;
+  width: 50%;
+  border: 3px solid #66fcf1;
+  padding: 15px;
+  box-sizing: border-box;
+  transition: all 0.3s ease-in-out;
+  color: white;
+}
+
+.button:hover{
+  background-color: #66fcf1;
+  color: #F5F5F5;
+  color: black;
+}
+
+/* Modal */
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.8);
+}
+
+.modal-content {
+
+  background-color: #F5F5F5;
+  margin: 5% auto;
+  width: 700px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+}
+
+.scale{
+  animation: scale 0.5s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes scale{
+  from{transform: scale(0);}
+  to{transform: scale(1);}
+}
+
+#img{
+  width: 100%;
+  height: 450px;
+}
+
+#details{
+  padding: 25px;
+  text-align: left;
+  border-top: 1px solid #777;
+  height: 100%;
+}
+
+#details *{
+  transition: all .3s;
+}
+
+#title{
+  padding-bottom: 15px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+
+
+/* Close Button */
+.close {
+  color: #aaa;
+  font-size: 28px;
+  font-weight: bold;
+  position: absolute;
+  right: 10px;
+}
+
+.close:hover,
+.close:focus {
+  color: #363638;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+/********Team*******/
+
+.team{
+  width: auto;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 30px;
+}
+
+.team .member{
+  width: 250px;
+  margin: 5px;
+  background: #ffffff;
+  padding: 20px 10px;
+}
+
+.team .member .member_img{
+  background: #e5e5e5;  
+  max-width: 190px;
+  width: 100%;
+  height: 190px;
+  margin: 0 auto;
+  border-radius: 50%;
+  padding: 5px;
+  position: relative;
+  cursor: pointer;
+}
+
+.team .member .member_img img{
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+.team .member h3{
+  text-transform: uppercase;
+  font-size: 18px;
+  line-height: 18px;
+  letter-spacing: 2px;
+  margin: 15px 0 0px;
+}
+
+.team .member .member_img .social_media{
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  background: rgba(0,0,0,0.65);
+  width: 95%;
+  height: 95%;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: scale(0);
+  transition: all 0.5s ease;
+}
+
+.team .member .member_img .social_media .item{
+  margin: 0 10px;
+}
+
+.team .member .member_img .social_media .fa{
+  color: #e5e5e5;
+  font-size: 20px;
+}
+
+.team .member .member_img:hover .social_media{
+  transform: scale(1);
+}
