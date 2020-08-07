@@ -128,10 +128,14 @@ text-align:   center;
 .vision  .visioncontent .box2{
    margin-left: 0%;
 }
+.vision  .visioncontent .right{
+   text-align:left;
+}
 
 
 .vision  .visioncontent p{
 padding-bottom: 30px;
+font-size: 12px ;
 }
 
  .vision .visioncontent p::before{
