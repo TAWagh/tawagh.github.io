@@ -107,9 +107,9 @@ flex:0 0 100%;
 @media(max-width: 800px){
 
 .vision  .visioncontent{
-
-  padding: 0 60px 0;
+  padding: 0 30px 0;
 }
+
 .vision  .visioncontent img{
   padding: 5px;
   height: 60px;
@@ -138,9 +138,9 @@ text-align: center;
 padding-bottom: 30px;
 }
 
-.vision .visioncontent p::before{
-display: none;
-}
+ .vision .visioncontent p::before{
+  display: none;
+ }
 
 }
 
