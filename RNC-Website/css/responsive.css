@@ -138,9 +138,10 @@ padding-bottom: 30px;
 font-size: 12px ;
 }
 
- .vision .visioncontent p::before{
-  display: none;
- }
+.vision .visioncontent p::before{
+height: 2px;
+width: 40px;
+}
 
 }
 
