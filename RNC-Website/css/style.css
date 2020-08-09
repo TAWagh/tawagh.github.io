@@ -70,7 +70,7 @@ header .navbar ul li a{
 header .navbar ul li a::before{
 content:'';
 height: 3px;
-background-color: #66fcf1;
+background-color: #40e0d0;
 width: 0%;
 position:absolute;
 right:0px;
@@ -115,7 +115,7 @@ left:0px;
   flex:0 0 100%;
   max-width: 100%;
   padding-left: 35px;
-  border-left: 5px solid #66fcf1
+  border-left: 5px solid #40e0d0
 }
 
 
@@ -130,7 +130,7 @@ left:0px;
 
 .typewriter  h6{
   overflow: hidden; /* Ensures the content is not revealed until the animation */
-  border-right: .15em solid #66fcf1; /* The typwriter cursor */
+  border-right: .15em solid #40e0d0; /* The typwriter cursor */
   white-space: nowrap; /* Keeps the content on a single line */
   margin: 0 auto; /* Gives that scrolling effect as the typing happens */
   letter-spacing: .15em; /* Adjust as needed */
@@ -148,7 +148,7 @@ left:0px;
 /* The typewriter cursor effect */
 @keyframes blink-caret {
   from, to { border-color: transparent }
-  50% { border-color: #66fcf1 }
+  50% { border-color: #40e0d0 }
 }
 
 .home .homecontent .block h1{
@@ -175,7 +175,7 @@ left:0px;
 .home .homecontent .block .button1 a{
   border-radius: 4px; 
   color:#ffffff;
-  border: 1px solid #66fcf1;
+  border: 1px solid #40e0d0;
   padding: 12px 25px;
   text-decoration: none;
   display: inline-block;
@@ -187,7 +187,7 @@ left:0px;
   }
 
   .home .homecontent .block .button1 a:hover{
-  background-color: #66fcf1;
+  background-color: #40e0d0;
   color:#1f2833;
   }
 
@@ -213,7 +213,7 @@ content:'';
 left:0px;
 position:absolute;
 height: 2px;
-background-color: #febd01;
+background-color: #ff955c;
 bottom: 0px;
 right:30%;
 }
@@ -321,7 +321,7 @@ content:'';
 position:absolute;
 height: 3px;
 width: 50px;
-background-color: #febd01;
+background-color: #ff955c;
 left: 0px;
 top: 0px;
 }
@@ -356,7 +356,7 @@ top: 0px;
 }
 
 .quote .quotecontent span{
-  color:#66fcf1;
+  color:#40e0d0;
   line-height: 2;
 }
 
@@ -396,7 +396,7 @@ left: 30%;
   content:'';
   position:absolute;
   height: 5px;
-  background-color: #febd01;
+  background-color: #ff955c;
   bottom: 0px;
   width: 60px;
   left:0px;
@@ -419,7 +419,7 @@ left: 30%;
 }
 
 .work .workcontent .box .icon:hover{
-  background-color: #febd01;
+  background-color: #ff955c;
 }
 
 .work .workcontent .box .icon .fa{
@@ -467,7 +467,7 @@ left: 30%;
 .vedanth .v{
   font-size: 60px;
   -webkit-text-fill-color:transparent;
-  -webkit-text-stroke:2.5px #66fcf1;
+  -webkit-text-stroke:2.5px #40e0d0;
 }
 
 .vedanth .text{
@@ -486,7 +486,7 @@ left: 30%;
 .vedanth .button2 a{
   border-radius: 4px; 
   color:#ffffff;
-  border: 1px solid #66fcf1;
+  border: 1px solid #40e0d0;
   padding: 12px 25px;
   text-decoration: none;
   display: inline-block;
@@ -498,7 +498,7 @@ left: 30%;
   }
 
 .vedanth .button2 a:hover{
-  background-color: #66fcf1;
+  background-color: #40e0d0;
   color:#00153d;
   }
 
@@ -572,7 +572,7 @@ left: 30%;
   flex: 0 0 60%;
   max-width: 60%;
   padding-right: 20px;
-  border-right: 1px solid #66fcf1;
+  border-right: 1px solid #40e0d0;
 }
 
 .contact .left .inputbox {
@@ -587,13 +587,13 @@ left: 30%;
       }
 
 .contact .left .inputbox:focus{
-      box-shadow: 0 0 8px 2px #66fcf1;
+      box-shadow: 0 0 8px 2px #40e0d0;
       }
 
 .contact .left button{
   border-radius: 4px; 
   color:#ffffff;
-  border: 1px solid #66fcf1;
+  border: 1px solid #40e0d0;
   padding: 12px 25px;
   text-decoration: none;
   font-size: 15px;
@@ -616,7 +616,7 @@ left: 30%;
 
 .contact_icon .fa{
   font-size: 20px;
-  color: #66fcf1;
+  color: #40e0d0;
 }
   
 
@@ -658,7 +658,7 @@ footer .social a {
 }
 
 footer .social a:hover {
- color: #66fcf1;
+ color: #40e0d0;
 }
 
 .name{
@@ -674,7 +674,7 @@ footer .social a:hover {
 }
 
  .name i{
- color:  #66fcf1;	
+ color:  #40e0d0;	
 }
 
 
