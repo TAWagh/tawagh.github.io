@@ -200,7 +200,7 @@ margin-bottom: 30px;
 
 .title h1{
   display: inline-block;
-  font-size: 35px;
+  font-size: 40px;
   text-transform: uppercase;
   font-weight: 700;
   color: #000000;
@@ -212,8 +212,8 @@ margin-bottom: 30px;
 content:'';
 left:0px;
 position:absolute;
-height: 2px;
-background-color: #ff955c;
+height: 4px;
+background-color: #75EBA1;
 bottom: 0px;
 right:30%;
 }
@@ -227,7 +227,7 @@ right:30%;
   text-align: left !important;
 }
 .about{
-background-color: #ffffff;
+background-color: #f2f3f3;
 padding:50px 0px 50px;
 }
 
@@ -242,29 +242,34 @@ padding:15px ;
 .about  .aboutcontent .pic{
  flex:0 0 33.33%;
  max-width: 33.33%;
+ align-self: center;
 
 }
 
 .about  .aboutcontent .pic img{
+  display: flex;
+justify-content: center;
   width: 100%;
   display:block;
 }
 
 .about  .aboutcontent .text {
-  padding-left:15px;
+  padding-left:5%;
  flex:0 0 66.66%;
  max-width: 66.66%;
+ align-self: center;
 }
 
 .about  .aboutcontent .text h2{
-color: #ff955c;
-font-size: 30px;
-font-weight:400; 
+display: flex;
+color: #00153d;
+font-size: 35px;
+font-weight:500; 
 }
 
 .about  .aboutcontent .text p{
 font-size: 16px;
-text-align: justify;
+line-height:1.8;
 }
 
 
@@ -322,7 +327,7 @@ content:'';
 position:absolute;
 height: 3px;
 width: 50px;
-background-color: #ff955c;
+background-color: #75EBA1;
 left: 0px;
 top: 0px;
 }
@@ -397,7 +402,7 @@ left: 30%;
   content:'';
   position:absolute;
   height: 5px;
-  background-color: #ff955c;
+  background-color: #75EBA1;
   bottom: 0px;
   width: 60px;
   left:0px;
@@ -420,7 +425,7 @@ left: 30%;
 }
 
 .work .workcontent .box .icon:hover{
-  background-color: #ff955c;
+  background-color: #75EBA1;
 }
 
 .work .workcontent .box .icon .fa{
@@ -706,7 +711,7 @@ footer .social a:hover {
   opacity:1;
 }
 .to_top:hover{
-  background-color: #ff955c;
+  background-color: #75EBA1;
   color:  #ffffff;
   box-shadow: 2px 2px 4px;
 }
