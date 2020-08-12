@@ -213,7 +213,7 @@ content:'';
 left:0px;
 position:absolute;
 height: 4px;
-background-color: #75EBA1;
+background-color: #3ed6ab;
 bottom: 0px;
 right:30%;
 }
@@ -222,10 +222,6 @@ right:30%;
   text-align: center!important;
 }
 
-
-.textleft{
-  text-align: left !important;
-}
 .about{
 background-color: #f2f3f3;
 padding:50px 0px 50px;
@@ -327,7 +323,7 @@ content:'';
 position:absolute;
 height: 3px;
 width: 50px;
-background-color: #75EBA1;
+background-color: #3ed6ab;
 left: 0px;
 top: 0px;
 }
@@ -402,7 +398,7 @@ left: 30%;
   content:'';
   position:absolute;
   height: 5px;
-  background-color: #75EBA1;
+  background-color: #3ed6ab;
   bottom: 0px;
   width: 60px;
   left:0px;
@@ -425,7 +421,7 @@ left: 30%;
 }
 
 .work .workcontent .box .icon:hover{
-  background-color: #75EBA1;
+  background-color: #3ed6ab;
 }
 
 .work .workcontent .box .icon .fa{
@@ -711,7 +707,7 @@ footer .social a:hover {
   opacity:1;
 }
 .to_top:hover{
-  background-color: #75EBA1;
+  background-color: #3ed6ab;
   color:  #ffffff;
   box-shadow: 2px 2px 4px;
 }
