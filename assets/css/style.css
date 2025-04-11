@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;500;600&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css');
+
+
+body {
+  background-color: #ffffff;
+  color: #343a40;
+}
+
+.container {
+  max-width: 960px;
+  margin: auto;
+  padding: 5px 20px;
+}
