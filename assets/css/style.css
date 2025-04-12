@@ -1,5 +1,15 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&family=Rethink+Sans:ital,wght@0,400..800;1,400..800&display=swap');
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css');
+
+/* Applied to all  */
+
+ *{
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+ scroll-behavior: smooth;
+ font-family: "Rethink Sans", serif;
+}
 
 
 body {
@@ -15,98 +25,139 @@ body {
 
 
 
-/* Fullscreen Particle.js background with parallax effect */
+
+/*----------------- START HOME SECTION ----------------*/
+
+
+/* Fullscreen Particle.js background */
 #particles-js {
-  position: fixed; /* Stays in place while scrolling */
+  position: fixed; /* Keeps it in the background */
   top: 0;
   left: 0;
   width: 100%;
   height: 100vh;
-  z-index: -1; /* Keeps it in the background */
+  z-index: -1; /* Background but interactive */
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
-
-#particles-js {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 1;
-}
-
-
-#home {
+.home {
   position: relative;
-  height: 100vh;
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
   text-align: center;
-  color: #EAEAEA; /* Soft white */
-  overflow: hidden;
-  font-family: 'Poppins', sans-serif;
+  height: 100vh;
+  width: 100%;
+  z-index: 1; /* Ensures this section is above the particles */
 }
-
 
 .home-content {
     position: relative;
-    z-index: 2;
+    z-index: 1;
     max-width: 800px;
     padding: 20px;
 }
 
-h1 {
-    font-size: 50px;
-    font-weight: 600;
-    margin-bottom: 10px;
-    color: #ffffff; /* Bright white */
+/* Subtitle */
+
+.home-content h4 {
+  font-family: "IBM Plex Sans", serif;
+  font-weight: 400;
+  font-size: 20px;
+  color: #495057; /* Softer contrast */
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 12px;
 }
 
-h4 {
-    font-size: 22px;
-    font-weight: 400;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    color: #00B4D8; /* Elegant teal accent */
-    margin-bottom: 15px;
+/* Animated Title */
+
+.headline {
+  font-size: 48px;
+  position: relative;
+  white-space: nowrap;
 }
 
-h6 {
-    font-size: 16px;
-    font-weight: 300;
-    line-height: 1.6;
-    color: #676767; /* Soft gray */
-    max-width: 600px;
-    margin: 0 auto 20px;
+.business, .technology {
+  display: inline-block;
+  color: #495057;
+  font-weight: 800;
+  transition: transform 1.5s ease-in-out, color 1.5s ease-in-out;
+}
+.amp {
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+  font-size: 28px;
+}
+.business {
+  transform: translateX(-100px);
+  color: #495057;
+}
+.technology {
+  transform: translateX(100px);
+  color: #495057;
+}
+.animate .business {
+  transform: translateX(0);
+  color: #2b6777;
+}
+.animate .technology {
+  transform: translateX(0);
+  color: #52ab98;
+}
+.animate .amp {
+  opacity: 1;
+  color: #495057;
+}
+.gradient {
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.business.gradient {
+  background-image: linear-gradient(to right, #2B6777, #3f8988);
+}
+.technology.gradient {
+  background-image: linear-gradient(to right, #3f8988, #52AB98);
 }
 
-.btn a {
-    display: inline-block;
-    padding: 12px 30px;
-    background: #008080; /* Teal */
-    color: white;
-    text-decoration: none;
-    font-size: 16px;
-    font-weight: 400;
-    border-radius: 30px;
-    margin-top: 20px;
-    transition: all 0.3s ease-in-out;
+/* Content */
+
+.home-content h6 {
+  font-size: 1.1rem;
+  font-weight: 400;
+  color: #495057; /* Medium gray for a balanced, modern look */
+  max-width: 650px;
+  margin: 0 auto 20px auto;
+  line-height: 1.7;
+}
+
+/* CTA Buttons */
+
+.buttons{
+  display: flex;
+  flex-wrap:wrap;
+  justify-content: center;
+  gap: 20px;
+ }
+
+ .btn a {
+  display: inline-block;
+  padding: 10px 26px;
+  background: transparent;
+  color: #52ab98; /* Teal */
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 500;
+  border: 1.5px solid #52ab98;
+  border-radius: 6px;
+  transition: all 0.3s ease-in-out;
+  letter-spacing: 0.5px;
 }
 
 .btn a:hover {
-    background: #005F5F; /* Darker teal */
-    transform: scale(1.05);
+  background: #52ab98;
+  opacity: 0.8;
+  color: white;
+  box-shadow: 0 4px 12px rgba(0, 128, 128, 0.2);
 }
-
-
-
-/* Other sections scroll over the fixed background */
-.about {
-  position: relative;
-  background: white; /* Ensures contrast over particles */
-  padding: 100px 0; /* Adjust for spacing */
-  min-height: 100vh; /* Ensures full-screen effect */
-  z-index: 2; /* Stays above particles */
-}
+/*----------------- END HOME SECTION ----------------*/

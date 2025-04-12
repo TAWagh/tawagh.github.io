@@ -1,3 +1,4 @@
+//Particles.js background configuration
 particlesJS("particles-js", {
     "particles": {
         "number": {
@@ -50,4 +51,17 @@ particlesJS("particles-js", {
         }
     },
     "retina_detect": true
+});
+
+//Home Section title animation
+document.addEventListener("DOMContentLoaded", function() {
+    setTimeout(() => {
+        document.querySelector(".headline").classList.add("animate");
+
+        // Delay gradient effect until movement animation is done
+        setTimeout(() => {
+            document.querySelector(".business").classList.add("gradient");
+            document.querySelector(".technology").classList.add("gradient");
+        }, 1500); // Matches the transition duration
+    }, 500);
 });
