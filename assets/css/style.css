@@ -49,7 +49,7 @@ body {
   position: absolute;
   top: 0;
   width: 100%;
-  z-index: 0; 
+  z-index: 2; 
   padding: 20px 0;
   font-family: "IBM Plex Sans", serif;
   transition: background 0.5s ease-in-out, box-shadow 0.5s ease-in-out, padding 0.5s ease-in-out;
@@ -77,11 +77,11 @@ transition: color 0.3s ease-in-out;
 }
 
 .nav-links a:hover {
-color: #2B6777;
+color:#52AB98 ;
 }
 
 .nav-links a.active {
-color:teal ;
+color: #2B6777;
 }
 /*----------------- END NAVIGATION BAR ----------------*/
 
@@ -524,12 +524,11 @@ td {
 
 .footer .nav-links a {
   text-decoration: none;
-  font-size: 14px;
-  transition: color 0.3s ease;
+  font-size: 16px;
+  transition: color 0.3s ease-in-out;
 }
 
 .footer .nav-links a:hover {
   color: #52AB98;
 }
-
 /*------------------ END FOOTER SECTION----------------*/
