@@ -23,6 +23,48 @@ body {
   padding: 5px 20px;
 }
 
+/*----------------- START NAVIGATION BAR ----------------*/
+
+.navbar {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 0; 
+  padding: 20px 0;
+  font-family: "IBM Plex Sans", serif;
+  transition: background 0.5s ease-in-out, box-shadow 0.5s ease-in-out, padding 0.5s ease-in-out;
+}
+
+.navbar .container {
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+
+/* Links on nav bar */
+
+.nav-links {
+list-style: none;
+display: flex;
+gap: 20px;
+}
+
+.nav-links a {
+text-decoration: none;
+color: black;
+font-size: 16px;
+transition: color 0.3s ease-in-out;
+}
+
+.nav-links a:hover {
+color: #2B6777;
+}
+
+.nav-links a.active {
+color:teal ;
+}
+/*----------------- END NAVIGATION BAR ----------------*/
+
 
 
 
