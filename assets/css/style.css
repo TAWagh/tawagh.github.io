@@ -269,3 +269,76 @@ td {
 }
 
 /*----------------- END ABOUT SECTION ----------------*/
+
+/*----------------- START PROJECTS SECTION----------------*/
+
+.projects {
+  position: relative;
+  background: #f1f1f1; /* Ensures contrast over particles */
+  z-index: 2; /* Stays above particles */
+  padding: 80px 0;
+}
+
+.projects .title{
+  text-align: center;
+  padding-bottom: 25px;
+
+}
+
+.project-tab-container {
+  display: flex;
+  justify-content: flex-start;
+  gap: 10px;
+  margin-bottom: 25px;
+  justify-content: center;
+}
+
+.card-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin: 0 auto; /* To keep everything centered */
+}
+
+.card img {
+  width: 100%; /* Makes the image take full width */
+  border-radius: 8px 8px 0 0; /* Optional: Keeps rounded corners only on top */
+  margin: 0; /* No margin on the image */
+  display: block; /* Removes any default spacing */
+}
+
+.card-content {
+  padding: 10px; /* Apply padding only to text content */
+  text-align: left; /* Left-align the text like you wanted */
+}
+
+.card {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 280px; /* Slightly bigger to fit 3 in one row */
+  cursor: pointer;
+  transition: transform 0.2s ease-out, box-shadow 0.2s ease-out;
+}
+
+.card:hover {
+  transform: scale(1.02); /* Slightly enlarges the box */
+}
+
+.tags {
+  margin-top: 10px;
+  text-align: left;
+
+}
+.tag {
+  background: #52AB9830;
+  color: #343a40;
+  padding: 0.25rem 0.75rem;
+  border-radius: 999px;
+  font-size: 0.75rem;
+  display: inline-block;
+  margin-bottom: 3px;
+}
+
+/*----------------- END PROJECTS SECTION----------------*/

@@ -132,18 +132,132 @@
   </div>
 </div>
 </section>
+
 <!---------- END ABOUT SECTION ---------->
 
+<!---------- START PROJECTS SECTION ---------->
 
+<section id="projects" class="projects">
+  <div class="container">
+    <div class="title">
+      <h1>Projects</h1>
+    </div>
+    <div class="project-tab-container">
+      <div class="tab active" onclick="filterProjects('all', event)">All</div>
+      <div class="tab" onclick="filterProjects('gen-ai', event)">Generative AI</div>
+      <div class="tab" onclick="filterProjects('business-analytics', event)">Business Analytics</div>
+      <div class="tab" onclick="filterProjects('product-design', event)">Product Design</div>
+    </div>
+    <div class="card-container" id="project-list">
 
-  <section id="projects"class="projects">
-    <div class="container">
-      <div class="title">
-        <h1>Projects</h1>
+      <!-- Generative AI Projects -->
+      <div class="card" data-category="gen-ai" onclick="openPopup('langchain')">
+        <img src="assets/img/test.jpg">
+        <div class="card-content">
+          <h3>LangChain Travel Itinerary</h3>
+          <div class="tags">
+            <span class="tag">Python</span>
+            <span class="tag">LangChain</span>
+            <span class="tag">API Integration</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="card" data-category="gen-ai" onclick="openPopup('krach')">
+        <img src="assets/img/test.jpg">
+        <div class="card-content">
+          <h3>Krach Institute Basic Questions</h3>
+          <div class="tags">
+            <span class="tag">RAG</span>
+            <span class="tag">Python</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="card" data-category="gen-ai" onclick="openPopup('coverletter')">
+        <img src="assets/img/test.jpg">
+        <div class="card-content">
+          <h3>Job Description to Cover Letter</h3>
+          <div class="tags">
+            <span class="tag">RAG</span>
+            <span class="tag">NLP</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Business Analytics Projects -->
+      <div class="card" data-category="business-analytics" onclick="openPopup('sap')">
+        <img src="assets/img/test.jpg">
+        <div class="card-content">
+          <h3>SAP AI Predictive Maintenance</h3>
+          <div class="tags">
+            <span class="tag">SAP</span>
+            <span class="tag">IOT</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="card" data-category="business-analytics" onclick="openPopup('customer-segmentation')">
+        <img src="assets/img/test.jpg">
+        <div class="card-content">
+          <h3>Customer Segmentation</h3>
+          <div class="tags">
+            <span class="tag">ML</span>
+            <span class="tag">Python</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="card" data-category="business-analytics" onclick="openPopup('churn')">
+        <img src="assets/img/test.jpg">
+        <div class="card-content">
+          <h3>Churn Analysis Telecom</h3>
+          <div class="tags">
+            <span class="tag">ML</span>
+            <span class="tag">Python</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="card" data-category="business-analytics" onclick="openPopup('sustainability-dashboard')">
+        <img src="assets/img/test.jpg">
+        <div class="card-content">
+          <h3>Sustainability Dashboard</h3>
+          <div class="tags">
+            <span class="tag">Tableau</span>
+            <span class="tag">BI</span>
+          </div>
+        </div>
+      </div>
+
+    
+      <!-- Product Design Projects -->
+      <div class="card" data-category="product-design" onclick="openPopup('figma-web')">
+        <img src="assets/img/test.jpg">
+        <div class="card-content">
+          <h3>Figma Web Design</h3>
+          <div class="tags">
+            <span class="tag">Figma</span>
+            <span class="tag">UI/UX</span>
+          </div>
+        </div>
+      </div>
+
+      
+      <div class="card" data-category="product-design" onclick="openPopup('figma-hr')">
+        <img src="assets/img/test.jpg">
+        <div class="card-content">
+          <h3>Figma Product Design HR Platform</h3>
+          <div class="tags">
+            <span class="tag">Tableau</span>
+            <span class="tag">BI</span>
+          </div>
+        </div>
       </div>
     </div>
   </div>
-  </section>
+</section>
+<!---------- END PROJECTS SECTION ---------->
 
   <section id="contact"class="contact">
     <div class="container">

@@ -81,3 +81,13 @@ function showContent(id) {
     document.querySelectorAll('.tab-content').forEach(div => div.classList.remove('active'));
     document.getElementById(id).classList.add('active');
 }
+
+function filterProjects(category, event) {
+    const container = event.target.closest('.project-tab-container');
+    container.querySelectorAll('.tab').forEach(tab => tab.classList.remove('active'));
+    event.target.classList.add('active');
+
+    document.querySelectorAll('.card').forEach(card => {
+        card.style.display = (category === 'all' || card.getAttribute('data-category') === category) ? 'block' : 'none';
+    });
+}
