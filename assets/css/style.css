@@ -282,7 +282,6 @@ td {
 .projects .title{
   text-align: center;
   padding-bottom: 25px;
-
 }
 
 .project-tab-container {
@@ -329,8 +328,8 @@ td {
 .tags {
   margin-top: 10px;
   text-align: left;
-
 }
+
 .tag {
   background: #52AB9830;
   color: #343a40;
@@ -339,6 +338,117 @@ td {
   font-size: 0.75rem;
   display: inline-block;
   margin-bottom: 3px;
+}
+
+.popup-overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(5px);
+  z-index: 1000; /* Ensures it overlays all sections */
+}
+
+.popup {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  z-index: 1001; /* Ensures it overlays all sections */
+  max-width: 800px;
+  width: 100%;
+  overflow-y: auto;
+  max-height: 90vh; /* Decreased height from full viewport */
+  scrollbar-width: thin; /* For Firefox */
+  scrollbar-color: #ffffff transparent; /* Solid thumb with transparent track */
+}
+
+.popup h2 {
+  margin-bottom: 10px; /* Add spacing below the title */
+}
+
+.popup h3 {
+  margin-top: 25px; /* Add spacing above subtitles */
+  margin-bottom: 10px; /* Add spacing below subtitles */
+}
+
+.popup ul {
+  margin-left: 0; /* Align with subtitles */
+  list-style-type: disc; /* Add bullet points */
+  padding-left: 20px; /* Minimal padding for alignment */
+}
+
+.popup ul li {
+  margin-bottom: 10px; /* Add spacing between list items */
+}
+
+.popup ul li b {
+  font-weight: 500; /* Slightly bold for emphasis */
+  font-size: 16px; /* Match font size with links */
+}
+
+.popup ul{
+  list-style-type: none; /* Remove default bullet points */
+  padding-left: 0; /* Remove default padding */
+}
+
+.popup ul li {
+  position: relative;
+  padding-left: 25px; /* Add space for the checkmark */
+  margin-bottom: 10px; /* Add spacing between items */
+}
+
+.popup ul.features-list li::before {
+  content: '\2714'; /* Unicode for checkmark */
+  position: absolute;
+  left: 0;
+  color: #2B6777; /* Teal color for the checkmark */
+  font-size: 16px; /* Adjust size of the checkmark */
+  font-weight: bold;
+}
+
+.popup ul.tech-list li::before {
+  content: '\2981'; /* Unicode for checkmark */
+  position: absolute;
+  left: 0;
+  color: #2B6777; /* Teal color for the checkmark */
+  font-size: 16px; /* Adjust size of the checkmark */
+  font-weight: bold;
+}
+
+
+.popup .close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.popup a {
+  color: #2b6777; /* Teal color for links */
+  text-decoration: none; /* Remove underline */
+
+  font-weight: 500; /* Slightly bold for emphasis */
+  transition: color 0.3s ease, text-decoration 0.3s ease;
+}
+
+.popup a:hover {
+  color: #52ab98; /* Lighter teal on hover */
+  text-decoration: underline; /* Add underline on hover */
+}
+
+.popup .fa {
+  color: #495057; /* Teal color for Font Awesome icons */
+  transition: color 0.5s ease;
 }
 
 /*----------------- END PROJECTS SECTION----------------*/

@@ -82,12 +82,23 @@ function showContent(id) {
     document.getElementById(id).classList.add('active');
 }
 
+//Toggle Project Filter tabs
 function filterProjects(category, event) {
     const container = event.target.closest('.project-tab-container');
     container.querySelectorAll('.tab').forEach(tab => tab.classList.remove('active'));
     event.target.classList.add('active');
-
     document.querySelectorAll('.card').forEach(card => {
         card.style.display = (category === 'all' || card.getAttribute('data-category') === category) ? 'block' : 'none';
     });
+}
+
+//Project Detail Popups
+function openPopup(id) {
+    document.getElementById(id).style.display = 'block';
+    document.getElementById('popup-overlay').style.display = 'block';
+}
+function closePopup() {
+    const popups = document.querySelectorAll('.popup');
+    popups.forEach(popup => popup.style.display = 'none');
+    document.getElementById('popup-overlay').style.display = 'none';
 }
