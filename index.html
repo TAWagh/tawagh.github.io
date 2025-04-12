@@ -55,19 +55,85 @@
 </section>
 <!---------- END HOME SECTION ---------->
 
+<!---------- START ABOUT SECTION ---------->
 <section id="about"class="about">
-    <div class="container">
-      <div class="title">
-        <h1>About Me</h1>
-      </div>
-      <div class="about-content">
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-          <br>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-      </div>
+  <div class="container">
+    <div class="title">
+      <h1>About Me</h1>
+    </div>
+    <div class="about-content">
+      <div class="box">
+        <p>I thrive on collaboration, whether it’s brainstorming ideas, solving problems, or building something from scratch. I bring a vision to the table, always focused on creating solutions that add value. With a background in embedded systems, AI, and IoT, I’m fascinated by how these technologies tackle real-world challenges.</p>
+        <br>
+        <p>Outside of work, I love swimming in the summers and ice-skating in the winters. I enjoy photography, capturing perspectives that often go unnoticed. I’m very passionate about mentorship and enjoy sharing my experiences to help others in their academic and professional journey.</p>
+    </div>
+    <div class="box">
+        <div class="aboutme-tab-container">
+          <div class="tab active" onclick="showContent('experience')">Experience</div>
+          <div class="tab" onclick="showContent('skills')">Skills</div>
+          <div class="tab" onclick="showContent('education')">Education</div>
+        </div>
+
+        <!-- Experience -->
+        <div id="experience" class="tab-content active">
+              <table>
+                <tr>
+                    <td><strong>Tandigm Health</strong></td>
+                    <td><i>Sr. Analyst, Information & Performance Management</i></td>
+                    <td>2024</td>
+                </tr>
+                <tr>
+                    <td><strong>SAP America</strong></td>
+                    <td><i>Associate, Cloud Business Operations & Insights</i></td>
+                    <td>2022</td>
+                </tr>
+                <tr>
+                    <td><strong>Deloitte</strong></td>
+                    <td><i>Analyst, Business Intelligence</i></td>
+                    <td>2021</td>
+                </tr>
+            </table>
+        </div>
+        
+        <!-- Skills -->
+        <div id="skills" class="tab-content">
+          <table>
+            <tr>
+                <td><strong>Programming Languages</strong></td>
+                <td><i>Embedded C, C++, Python (Pandas, NumPy, Matplotlib, TensorFlow), HTML, CSS, JavaScript </i></td>
+            </tr>
+            <tr>
+                <td><strong>Analytics Toolkit</strong></td>
+                <td><i>SQL, Tableau, PowerBI, SAP Datasphere, SAP BW, Advanced Excel (Pivot Tables), SAP Analytics Cloud </i></td>
+            </tr>
+            <tr>
+                <td><strong>Collaboration</strong></td>
+                <td><i>Jira, Aha!, Asana, Trello, Smartsheet, Power Automate, SharePoint, Office 365 </i></td>
+            </tr>
+          </table>
+        </div>
+
+        <!-- Education -->
+        <div id="education" class="tab-content">
+          <table>
+            <tr>
+                <td><strong>Master of Science</strong></td>
+                <td><i>Engineering Management</i></td>
+                <td>Purdue University</td>
+            </tr>
+            <tr>
+                <td><strong>Bachelor of Technology</strong></td>
+                <td><i>Electrical & Electronics Engineering</i></td>
+                <td>Manipal University</td>
+            </tr>
+          </table>
+        </div>
     </div>
   </div>
-  </section>
+</div>
+</section>
+<!---------- END ABOUT SECTION ---------->
+
 
 
   <section id="projects"class="projects">

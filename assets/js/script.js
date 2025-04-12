@@ -71,3 +71,13 @@ document.addEventListener("DOMContentLoaded", function() {
         }, 1500); // Matches the transition duration
     }, 500);
 });
+
+//Toggle About Section tabs
+function showContent(id) {
+    const container = event.target.closest('.aboutme-tab-container');
+    container.querySelectorAll('.tab').forEach(tab => tab.classList.remove('active'));
+    event.target.classList.add('active');
+
+    document.querySelectorAll('.tab-content').forEach(div => div.classList.remove('active'));
+    document.getElementById(id).classList.add('active');
+}

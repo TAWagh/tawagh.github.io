@@ -23,6 +23,26 @@ body {
   padding: 5px 20px;
 }
 
+.title {
+  font-size: 30px;
+  color: #343a40
+}
+
+
+.tab{
+  cursor: pointer;
+  padding: 5px 20px;
+  border-radius: 5px;
+  background-color: #52ab9830;
+  color: #3f8988;
+  transition: background 0.3s;
+}
+
+.tab.active {
+  background-color: #2B677730;
+  color:#2B6777;
+}
+
 /*----------------- START NAVIGATION BAR ----------------*/
 
 .navbar {
@@ -64,8 +84,6 @@ color: #2B6777;
 color:teal ;
 }
 /*----------------- END NAVIGATION BAR ----------------*/
-
-
 
 
 /*----------------- START HOME SECTION ----------------*/
@@ -203,3 +221,51 @@ color:teal ;
   box-shadow: 0 4px 12px rgba(0, 128, 128, 0.2);
 }
 /*----------------- END HOME SECTION ----------------*/
+
+/*----------------- START ABOUT SECTION ----------------*/
+
+.about {
+  position: relative;
+  background: #F8F9FA; /* Ensures contrast over particles */
+  z-index: 2; /* Stays above particles */
+  padding: 80px 0;
+}
+
+.about-content{
+  padding-top: 25px;
+  display: flex;
+  flex-wrap: wrap; /* Enables wrapping */
+  justify-content: space-between;
+  gap: 50px;
+}
+
+.about-content .box {
+  flex: 1 1 45%; /* Equal width, but flexible */
+  min-width: 350px; /* Prevents shrinking too much */
+}
+
+.aboutme-tab-container {
+  display: flex;
+  justify-content: flex-start;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.tab-content {
+  display: none;
+}
+.tab-content.active {
+  display: block;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 15px;
+}
+td {
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+}
+
+/*----------------- END ABOUT SECTION ----------------*/
