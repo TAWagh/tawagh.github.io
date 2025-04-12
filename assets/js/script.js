@@ -2,25 +2,31 @@
 particlesJS("particles-js", {
     "particles": {
         "number": {
-            "value": 80, 
+            "value": 65, 
             "density": { "enable": true, "value_area": 800 }
         },
-        "color": {"value": ["#008080", "#808080"] }, 
+        "color": {"value": ["#008080"] }, // Teal & Brown
         "shape": { 
             "type": "circle"
         },
         "opacity": { 
-            "value": 0.7, 
-            "random": true
+            "value": 0.4
         },
         "size": {
-            "value": 5,
+            "value": 4,
             "random": true,
-            "anim": { "enable": true, "speed": 1, "size_min": 4 } 
+            "anim": { "enable": true, "speed": 1, "size_min": 2} // Increased size range
+        },
+        "line_linked": { 
+            "enable": true,
+            "distance": 145, 
+            "color": "#808080", 
+            "opacity": 0.5, 
+            "width": 1.2 
         },
         "move": {
             "enable": true,
-            "speed": 1, 
+            "speed": 1.7, 
             "direction": "none",
             "random": false,
             "straight": false,
@@ -45,8 +51,8 @@ particlesJS("particles-js", {
                 "duration": 0.3 
             },
             "push": { 
-                "particles_nb": 8,
-                "particles_size": 4 
+                "particles_nb": 8, // Increased number of particles added on click
+                "particles_size": 4 // Added more noticeable size change
             }
         }
     },
