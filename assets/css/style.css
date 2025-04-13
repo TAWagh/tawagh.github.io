@@ -29,13 +29,17 @@ body {
 }
 
 
-.tab{
+.tab {
   cursor: pointer;
   padding: 5px 20px;
   border-radius: 5px;
   background-color: #52ab9830;
   color: #3f8988;
   transition: background 0.3s;
+  text-align: center;
+  display: flex;
+  align-items: center; /* Vertically centers the text */
+  justify-content: center; /* Horizontally centers the text */
 }
 
 .tab.active {
@@ -62,6 +66,9 @@ align-items: center;
 }
 
 /* Links on nav bar */
+.nav-logo {
+font-size: 20px;
+}
 
 .nav-links {
 list-style: none;
@@ -71,7 +78,7 @@ gap: 20px;
 
 .nav-links a {
 text-decoration: none;
-color: black;
+color: #343a40;
 font-size: 16px;
 transition: color 0.3s ease-in-out;
 }
@@ -240,13 +247,14 @@ color: #2B6777;
 }
 
 .about-content .box {
-  flex: 1 1 45%; /* Equal width, but flexible */
+  flex: 1 1 45%; 
   min-width: 350px; /* Prevents shrinking too much */
 }
 
 .aboutme-tab-container {
   display: flex;
   justify-content: flex-start;
+  flex-wrap: wrap;
   gap: 10px;
   margin-bottom: 15px;
 }
@@ -257,7 +265,6 @@ color: #2B6777;
 .tab-content.active {
   display: block;
 }
-
 table {
   width: 100%;
   border-collapse: collapse;
@@ -499,14 +506,14 @@ td {
   align-items: center;
   justify-content: center;
   text-align: center;
-  color: black;
+  color: #343a40;
   border-bottom: 6px solid #2b67779e; /* Adjust thickness and color */
 
 }
 
 .footer .logo {
   font-size: 24px;
-  padding-bottom:20px;
+  padding-bottom:15px;
 }
 
 .footer .nav-links {

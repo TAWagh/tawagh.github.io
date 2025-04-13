@@ -9,7 +9,7 @@
     <meta name="author" content="Titiksha Wagh">
     <title>Titiksha Wagh</title>
     <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="css/responsive.css">    
+    <link rel="stylesheet" href="assets/css/responsive.css">    
     <link rel="icon" href="assets/img/favicon.png" type="image">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" /> <!-- for animation -->
 </head>
@@ -20,7 +20,7 @@
 <header> 
   <nav class="navbar">
     <div class="container">
-    <div>T. Wagh</div>
+    <div class="nav-logo">T. Wagh</div>
     <ul class="nav-links">
       <li><a href="#home" class="active">HOME</a></li>
       <li><a href="#about">ABOUT</a></li>
@@ -141,10 +141,10 @@
       <h1>Projects</h1>
     </div>
     <div class="project-tab-container">
-      <div class="tab active" onclick="filterProjects('all', event)">All</div>
-      <div class="tab" onclick="filterProjects('gen-ai', event)">Generative AI</div>
-      <div class="tab" onclick="filterProjects('business-analytics', event)">Business Analytics</div>
-      <div class="tab" onclick="filterProjects('product-design', event)">Product Design</div>
+      <div class="tab active" onclick="filterProjects('all', event)">Featured</div>
+      <div class="tab" onclick="filterProjects('gen-ai', event)">Gen AI</div>
+      <div class="tab" onclick="filterProjects('business-analytics', event)"> Analytics</div>
+      <div class="tab" onclick="filterProjects('product-design', event)"> Design</div>
     </div>
     <div class="card-container" id="project-list">
 
@@ -543,7 +543,6 @@
     <li><a href="#projects">PROJECTS</a></li>
     <li><a href="#contact">CONTACT</a></li>
   </ul>
-  </div>
 </footer>
 <!---------- END FOOTER ---------->
 
