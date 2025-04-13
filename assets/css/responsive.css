@@ -47,7 +47,7 @@
         font-size: 20px;
       }
     .home-content h6 {
-        font-size: 14px;
+        font-size: 16px;
       }
 }
 
@@ -82,6 +82,12 @@
         flex: 1 1 50%;
         max-width: 150px;
       }
+    .popup {
+        max-width: 85vw; /* Decreased width from full viewport */
+    }
+    .popup ul.features-list li {
+      color: #2B6777; /* Ensure consistent checkmark color */
+    }
 }
 /* Project Details Popup */
 
