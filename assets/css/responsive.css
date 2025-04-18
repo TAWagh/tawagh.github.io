@@ -105,6 +105,9 @@
       justify-content: center;
       margin-top: 20px;
     }
+    .icon-container {
+      flex-direction: row;
+    }
   }
 /*----------------- END CONTACT SECTION----------------*/
 
