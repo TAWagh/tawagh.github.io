@@ -42,6 +42,10 @@ body {
   justify-content: center; /* Horizontally centers the text */
 }
 
+.tab:hover {
+  background-color: #52ab9850;
+}
+
 .tab.active {
   background-color: #2B677730;
   color:#2B6777;
