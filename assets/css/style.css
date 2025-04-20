@@ -28,6 +28,10 @@ body {
   color: #343a40
 }
 
+p{
+  font-size: 16px;
+}
+
 
 .tab {
   cursor: pointer;
@@ -271,6 +275,7 @@ color: #2B6777;
 .tab-content.active {
   display: block;
 }
+
 table {
   width: 100%;
   border-collapse: collapse;

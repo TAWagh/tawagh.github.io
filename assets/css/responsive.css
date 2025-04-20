@@ -1,10 +1,20 @@
 @media (max-width: 550px) {
+      
+
     .container {
       max-width: 90%;
     }
 
-    p {
-        font-size: 16px;
+    .title {
+      font-size: 24px;
+    }
+
+    p{
+      font-size: 14px;
+    }
+
+    table {
+      font-size: 14px;
     }
   }
 
@@ -51,9 +61,11 @@
         font-size: 20px;
       }
     .home-content h6 {
-        font-size: 16px;
-      }
-}
+      font-size: 16px;
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+  }
 
 /*----------------- END HOME SECTION ----------------*/
 
@@ -72,6 +84,7 @@
     .tab-content table {
       width: 100%; /* Ensure tables fit within the container */
     }
+
   }
 /*----------------- END ABOUT SECTION ----------------*/
 
