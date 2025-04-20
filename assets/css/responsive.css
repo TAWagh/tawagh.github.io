@@ -16,6 +16,10 @@
     table {
       font-size: 14px;
     }
+
+    iframe[src*="botpress.cloud"]{
+      display: none !important; /* Hides the chatbot */
+    }
   }
 
 
