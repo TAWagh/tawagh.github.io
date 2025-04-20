@@ -106,12 +106,12 @@ color: #2B6777;
 
 /* Fullscreen Particle.js background */
 #particles-js {
-  position: fixed; /* Keeps it in the background */
+  position: fixed; 
   top: 0;
   left: 0;
   width: 100%;
   height: 100vh;
-  z-index: -1; /* Background but interactive */
+  z-index: -1;
 }
 
 .home {
@@ -138,7 +138,7 @@ color: #2B6777;
   font-family: "IBM Plex Sans", serif;
   font-weight: 400;
   font-size: 20px;
-  color: #495057; /* Softer contrast */
+  color: #495057; 
   text-transform: uppercase;
   letter-spacing: 1px;
   margin-bottom: 12px;
@@ -200,7 +200,7 @@ color: #2B6777;
 .home-content h6 {
   font-size: 1.1rem;
   font-weight: 400;
-  color: #495057; /* Medium gray for a balanced, modern look */
+  color: #495057; 
   max-width: 650px;
   margin: 0 auto 20px auto;
   line-height: 1.7;
@@ -234,7 +234,7 @@ color: #2B6777;
   opacity: 0.8;
   color: white;
   box-shadow: 0 4px 12px rgba(0, 128, 128, 0.2);
-  transform: scale(1.05); /* Slightly enlarge the icon on hover */
+  transform: scale(1.05); 
 
 }
 /*----------------- END HOME SECTION ----------------*/
@@ -251,14 +251,14 @@ color: #2B6777;
 .about-content{
   padding-top: 25px;
   display: flex;
-  flex-wrap: wrap; /* Enables wrapping */
+  flex-wrap: wrap; 
   justify-content: space-between;
   gap: 50px;
 }
 
 .about-content .box {
   flex: 1 1 45%; 
-  min-width: 350px; /* Prevents shrinking too much */
+  min-width: 350px; 
 }
 
 .aboutme-tab-container {
@@ -390,29 +390,29 @@ td {
   max-width: 750px;
   width: 100%;
   overflow-y: auto;
-  max-height: 90vh; /* Decreased height from full viewport */
-  scrollbar-width: thin; /* For Firefox */
-  scrollbar-color: #ffffff transparent; /* Solid thumb with transparent track */
+  max-height: 90vh;
+  scrollbar-width: thin;
+  scrollbar-color: #ffffff transparent; 
 }
 
 .popup h2 {
-  margin-bottom: 10px; /* Add spacing below the title */
+  margin-bottom: 10px;\
 }
 
 .popup h3 {
-  margin-top: 25px; /* Add spacing above subtitles */
-  margin-bottom: 10px; /* Add spacing below subtitles */
+  margin-top: 25px; 
+  margin-bottom: 10px; 
 }
 
 .popup ul{
-  list-style-type: none; /* Remove default bullet points */
-  padding-left: 0; /* Remove default padding */
+  list-style-type: none; 
+  padding-left: 0;
 }
 
 .popup ul li {
   position: relative;
-  padding-left: 25px; /* Add space for the checkmark */
-  margin-bottom: 10px; /* Add spacing between items */
+  padding-left: 25px; 
+  margin-bottom: 10px; 
 }
 
 .popup ul.features-list li::before {
@@ -476,30 +476,31 @@ td {
 .icon-container {
   display: flex;
   flex-direction: column;
-  justify-content: center; /* Center icons horizontally */
-  gap: 15px; /* Adjust the space between icons */
-  flex-wrap: wrap; /* Allow wrapping if needed for smaller screens */
-  margin-top: 20px; /* Space above the icons */
+  justify-content: center; 
+  gap: 15px; 
+  flex-wrap: wrap; 
+  margin-top: 20px; 
+  padding-right: 15px;
 }
 
 .icon {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 35px; /* Adjust size of the round bubble */
-  height: 35px; /* Adjust size of the round bubble */
-  border-radius: 50%; /* Makes the bubble round */
-  background-color: #2B6777; /* Placeholder color, adjust as needed */
-  color: #ffffff; /* Icon color */
-  font-size: 15px; /* Icon size */
-  text-decoration: none; /* Remove underline */
-  transition: all 0.3s ease-in-out; /* Smooth transition for hover effect */
+  width: 35px;
+  height: 35px; 
+  border-radius: 50%;
+  background-color: #2B6777; 
+  color: #ffffff;
+  font-size: 15px; 
+  text-decoration: none; 
+  transition: all 0.3s ease-in-out; 
 }
 
 .icon:hover {
-  background-color: #52ab98; /* Placeholder hover color */
-  color: white; /* Icon color on hover */
-  transform: scale(1.1); /* Slightly enlarge the icon on hover */
+  background-color: #52ab98; 
+  color: white; 
+  transform: scale(1.1); 
 }
 /*----------------- END CONTACT SECTION----------------*/
 
@@ -507,7 +508,7 @@ td {
 
 .footer {
   position: relative;
-  background: #F8F9FA;   /* background: #F8F9FA;*/
+  background: #F8F9FA;
   z-index: 1; 
   padding-top: 60px;
   display: flex;
@@ -516,7 +517,7 @@ td {
   justify-content: center;
   text-align: center;
   color: #343a40;
-  border-bottom: 5px solid #2b6777; /* Adjust thickness and color */
+  border-bottom: 5px solid #2b6777;
 
 }
 

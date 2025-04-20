@@ -135,10 +135,13 @@
 /*----------------- START FOOTER SECTION----------------*/
 @media (max-width: 550px) {
     
+    .footer {
+        padding-bottom: 60px;
+
+    }  
     .footer .nav-links a {
         font-size: 14px;
-    }
-  
+    }  
 }
 
 /*------------------ END FOOTER SECTION----------------*/
