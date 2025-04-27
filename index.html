@@ -11,7 +11,6 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/responsive.css">    
     <link rel="icon" href="assets/img/favicon.png" type="image">
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" /> <!-- for animation -->
 </head>
 
 <body>
@@ -42,13 +41,13 @@
           <span class="amp">&</span>
           <span class="technology">Technology</span>
         </h1>
-        <h6>Hi there! I’m <b>Titiksha Wagh </b><i>(tee-tik-shaw)</i> — an analytics professional at the intersection of <b>data, strategy, and product thinking</b>. I break down complex problems, build data-driven solutions, and optimize experiences.</h6>
+        <h6>Hi there! I’m <b>Titiksha Wagh </b><i>(tee-tik-shaw)</i> — a business technologist at the intersection of <b>data, product an strategy</b>. I break down complex problems, build data-enabled solutions, and optimize user experiences.</h6>
         <div class="buttons">
           <div class="btn">
             <a href="#projects">See Projects</a>
           </div>
           <div class="btn">
-            <a href="https://cdn.botpress.cloud/webchat/v2.3/shareable.html?configUrl=https://files.bpcontent.cloud/2025/04/19/00/20250419005853-8JAEX68T.json" target="_blank">Chat with T2</a>
+            <a href="https://cdn.botpress.cloud/webchat/v2.4/shareable.html?configUrl=https://files.bpcontent.cloud/2025/04/21/22/20250421223835-4U6XE04U.json" target="_blank">Chat with T2</a>
           </div>
         </div>
     </div>
@@ -149,7 +148,7 @@
     <div class="card-container" id="project-list">
 
       <!-- Generative AI Projects -->
-      <div class="card" data-category="gen-ai" onclick="openPopup('langchain')">
+      <div class="card" data-category="gen-ai" onclick="openPopup('travel-itinerary-generator')">
         <img src="assets/img/test.jpg">
         <div class="card-content">
           <h3>LangChain Travel Itinerary</h3>
@@ -161,52 +160,10 @@
         </div>
       </div>
 
-      <div class="card" data-category="gen-ai" onclick="openPopup('krach')">
-        <img src="assets/img/test.jpg">
-        <div class="card-content">
-          <h3>Krach Institute Basic Questions</h3>
-          <div class="tags">
-            <span class="tag">RAG</span>
-            <span class="tag">Python</span>
-          </div>
-        </div>
-      </div>
-
-      <div class="card" data-category="gen-ai" onclick="openPopup('coverletter')">
-        <img src="assets/img/test.jpg">
-        <div class="card-content">
-          <h3>Job Description to Cover Letter</h3>
-          <div class="tags">
-            <span class="tag">RAG</span>
-            <span class="tag">NLP</span>
-          </div>
-        </div>
-      </div>
 
       <!-- Business Analytics Projects -->
-      <div class="card" data-category="business-analytics" onclick="openPopup('sap')">
-        <img src="assets/img/test.jpg">
-        <div class="card-content">
-          <h3>SAP AI Predictive Maintenance</h3>
-          <div class="tags">
-            <span class="tag">SAP</span>
-            <span class="tag">IOT</span>
-          </div>
-        </div>
-      </div>
 
-      <div class="card" data-category="business-analytics" onclick="openPopup('customer-segmentation')">
-        <img src="assets/img/test.jpg">
-        <div class="card-content">
-          <h3>Customer Segmentation</h3>
-          <div class="tags">
-            <span class="tag">ML</span>
-            <span class="tag">Python</span>
-          </div>
-        </div>
-      </div>
-
-      <div class="card" data-category="business-analytics" onclick="openPopup('churn')">
+      <div class="card" data-category="business-analytics" onclick="openPopup('telecom-churn')">
         <img src="assets/img/test.jpg">
         <div class="card-content">
           <h3>Churn Analysis Telecom</h3>
@@ -217,20 +174,9 @@
         </div>
       </div>
 
-      <div class="card" data-category="business-analytics" onclick="openPopup('sustainability-dashboard')">
-        <img src="assets/img/test.jpg">
-        <div class="card-content">
-          <h3>Sustainability Dashboard</h3>
-          <div class="tags">
-            <span class="tag">Tableau</span>
-            <span class="tag">BI</span>
-          </div>
-        </div>
-      </div>
-
     
       <!-- Product Design Projects -->
-      <div class="card" data-category="product-design" onclick="openPopup('figma-web')">
+      <div class="card" data-category="product-design" onclick="openPopup('my-portfolio')">
         <img src="assets/img/test.jpg">
         <div class="card-content">
           <h3>Figma Web Design</h3>
@@ -241,24 +187,38 @@
         </div>
       </div>
 
-      
-      <div class="card" data-category="product-design" onclick="openPopup('figma-hr')">
-        <img src="assets/img/test.jpg">
-        <div class="card-content">
-          <h3>Figma Product Design HR Platform</h3>
-          <div class="tags">
-            <span class="tag">Tableau</span>
-            <span class="tag">BI</span>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
   <!-- Popups -->
   <div class="popup-overlay" id="popup-overlay" onclick="closePopup()"></div>
 
-  <div class="popup" id="langchain">
+  <div class="popup" id="travel-itinerary-generator">
+    <div id="popup-content">
+      <h2>Project Title Goes Here</h2>
+      <i class="fa fa-play-circle-o"></i> <a href="#">Demo</a> &emsp;
+      <i class="fa fa-code" style="font-weight: 700;"></i> <a href="#">Code</a> &emsp;
+      <i class="fa fa fa-file-text-o" style="font-weight: 700;"></i> <a href="#">Slides</a>
+      <h3>Overview</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nec luctus nibh. Suspendisse potenti. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Donec facilisis, nulla at vulputate dictum, sapien elit congue enim, at aliquet nisl lorem in arcu. Proin tincidunt, lorem nec ullamcorper euismod, justo nisi luctus massa, vitae feugiat augue sem at elit.</p>
+      <h3>Solution & Features</h3> 
+      <ul class="features-list">
+        <li><b>AI-Powered Itinerary Generation</b>: Takes  user preferances as inputs to generate a personalized, multi-day itinerary.</li>
+        <li><b>Google Maps Integration</b>: Extracts location names from the itinerary, uses the Google Maps API to geolocate them, and prepares a downloadable file for Google My Maps.</li>
+        <li><b>Interactive Map Visualization</b>: Visualizes each day’s itinerary with clear, color-coded pins using an embedded map view. Great for quick visual planning or sharing with others.</li>
+      </ul>      
+      <h3>Tools & Tech</h3>
+      <p>LangChain  
+        <span style="color: #2b6777;">•</span> 
+         Python  
+        <span style="color: #2b6777;">•</span>
+         Google Maps API
+        <span style="color: #2b6777;">•</span>
+         Streamlit 
+        <span style="color: #2b6777;">•</span>
+         OpenAI API 
+      </p>
+    </div>
+  </div>
+
+  <div class="popup" id="telecom-churn">
     <div id="popup-content">
       <h2>Project Title Goes Here</h2>
       <i class="fa fa-play-circle-o"></i> <a href="#">Demo</a> &emsp;
@@ -286,19 +246,19 @@
     </div>
   </div>
 
-  <div class="popup" id="krach">
+  <div class="popup" id="my-portfolio">
     <div id="popup-content">
-      <h2>Project Title Goes Here</h2>
+      <h2>My Portfolio Website</h2>
       <i class="fa fa-play-circle-o"></i> <a href="#">Demo</a> &emsp;
       <i class="fa fa-code" style="font-weight: 700;"></i> <a href="#">Code</a> &emsp;
       <i class="fa fa fa-file-text-o" style="font-weight: 700;"></i> <a href="#">Slides</a>
       <h3>Overview</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nec luctus nibh. Suspendisse potenti. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Donec facilisis, nulla at vulputate dictum, sapien elit congue enim, at aliquet nisl lorem in arcu. Proin tincidunt, lorem nec ullamcorper euismod, justo nisi luctus massa, vitae feugiat augue sem at elit.</p>
+      <p> I built my personal portfolio website from scratch to have a fully customizable space where I could showcase my work and a touch of my design sensibility. Rather than relying on templates, I wanted something that felt truly like “me”. A site that is easy to update, lightweight, and personal.</p>
       <h3>Solution & Features</h3>
       <ul class="features-list">
-        <li><b>Lorem Ipsum Dolor</b>: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vitae orci at nunc tempor fermentum.</li>
-        <li><b>Vestibulum Ante Ipsum</b>: Integer posuere, justo in dictum egestas, nunc lacus euismod nunc, a tristique mauris odio non magna.</li>
-        <li><b>Curabitur Dignissim Nisi</b>: Praesent nec velit nec ipsum faucibus pretium. Curabitur sit amet erat a justo tincidunt bibendum.</li>
+        <li><b>Interactive Hero Section</b>: A fun and interactive hero section that grabs attention and encourages visitors to explore further.</li>
+        <li><b>Modular & Maintainable Code</b>: Clean and modular code that is easy to update and maintain, ensuring flexibility for the long run.</li>
+        <li><b>Dedicated Projects Section</b>: A well-organized card layout designed to showcase builds and highlight technical and non-technical skills.</li>
       </ul>      
       <h3>Tools & Tech</h3>
       <p>Tool1 
@@ -314,225 +274,6 @@
     </div>
   </div>
 
-  <div class="popup" id="coverletter">
-    <div id="popup-content">
-      <h2>Project Title Goes Here</h2>
-      <i class="fa fa-play-circle-o"></i> <a href="#">Demo</a> &emsp;
-      <i class="fa fa-code" style="font-weight: 700;"></i> <a href="#">Code</a> &emsp;
-      <i class="fa fa fa-file-text-o" style="font-weight: 700;"></i> <a href="#">Slides</a>
-      <h3>Overview</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nec luctus nibh. Suspendisse potenti. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Donec facilisis, nulla at vulputate dictum, sapien elit congue enim, at aliquet nisl lorem in arcu. Proin tincidunt, lorem nec ullamcorper euismod, justo nisi luctus massa, vitae feugiat augue sem at elit.</p>
-      <h3>Solution & Features</h3>
-      <ul class="features-list">
-        <li><b>Lorem Ipsum Dolor</b>: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vitae orci at nunc tempor fermentum.</li>
-        <li><b>Vestibulum Ante Ipsum</b>: Integer posuere, justo in dictum egestas, nunc lacus euismod nunc, a tristique mauris odio non magna.</li>
-        <li><b>Curabitur Dignissim Nisi</b>: Praesent nec velit nec ipsum faucibus pretium. Curabitur sit amet erat a justo tincidunt bibendum.</li>
-      </ul>      
-      <h3>Tools & Tech</h3>
-      <p>Tool1 
-        <span style="color: #2b6777;">•</span> 
-         Tech1 
-        <span style="color: #2b6777;">•</span>
-         Tool2
-        <span style="color: #2b6777;">•</span>
-         Tool3
-        <span style="color: #2b6777;">•</span>
-         Tech2 
-      </p>
-    </div>
-  </div>
-
-  <div class="popup" id="sap">
-    <div id="popup-content">
-      <h2>Project Title Goes Here</h2>
-      <i class="fa fa-play-circle-o"></i> <a href="#">Demo</a> &emsp;
-      <i class="fa fa-code" style="font-weight: 700;"></i> <a href="#">Code</a> &emsp;
-      <i class="fa fa fa-file-text-o" style="font-weight: 700;"></i> <a href="#">Slides</a>
-      <h3>Overview</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nec luctus nibh. Suspendisse potenti. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Donec facilisis, nulla at vulputate dictum, sapien elit congue enim, at aliquet nisl lorem in arcu. Proin tincidunt, lorem nec ullamcorper euismod, justo nisi luctus massa, vitae feugiat augue sem at elit.</p>
-      <h3>Solution & Features</h3>
-      <ul class="features-list">
-        <li><b>Lorem Ipsum Dolor</b>: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vitae orci at nunc tempor fermentum.</li>
-        <li><b>Vestibulum Ante Ipsum</b>: Integer posuere, justo in dictum egestas, nunc lacus euismod nunc, a tristique mauris odio non magna.</li>
-        <li><b>Curabitur Dignissim Nisi</b>: Praesent nec velit nec ipsum faucibus pretium. Curabitur sit amet erat a justo tincidunt bibendum.</li>
-      </ul>      
-      <h3>Tools & Tech</h3>
-      <p>Tool1 
-        <span style="color: #2b6777;">•</span> 
-         Tech1 
-        <span style="color: #2b6777;">•</span>
-         Tool2
-        <span style="color: #2b6777;">•</span>
-         Tool3
-        <span style="color: #2b6777;">•</span>
-         Tech2 
-      </p>
-    </div>
-  </div>
-
-  <div class="popup" id="customer-segmentation">
-    <div id="popup-content">
-      <h2>Project Title Goes Here</h2>
-      <i class="fa fa-play-circle-o"></i> <a href="#">Demo</a> &emsp;
-      <i class="fa fa-code" style="font-weight: 700;"></i> <a href="#">Code</a> &emsp;
-      <i class="fa fa fa-file-text-o" style="font-weight: 700;"></i> <a href="#">Slides</a>
-      <h3>Overview</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nec luctus nibh. Suspendisse potenti. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Donec facilisis, nulla at vulputate dictum, sapien elit congue enim, at aliquet nisl lorem in arcu. Proin tincidunt, lorem nec ullamcorper euismod, justo nisi luctus massa, vitae feugiat augue sem at elit.</p>
-      <h3>Solution & Features</h3>
-      <ul class="features-list">
-        <li><b>Lorem Ipsum Dolor</b>: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vitae orci at nunc tempor fermentum.</li>
-        <li><b>Vestibulum Ante Ipsum</b>: Integer posuere, justo in dictum egestas, nunc lacus euismod nunc, a tristique mauris odio non magna.</li>
-        <li><b>Curabitur Dignissim Nisi</b>: Praesent nec velit nec ipsum faucibus pretium. Curabitur sit amet erat a justo tincidunt bibendum.</li>
-      </ul>      
-      <h3>Tools & Tech</h3>
-      <p>Tool1 
-        <span style="color: #2b6777;">•</span> 
-         Tech1 
-        <span style="color: #2b6777;">•</span>
-         Tool2
-        <span style="color: #2b6777;">•</span>
-         Tool3
-        <span style="color: #2b6777;">•</span>
-         Tech2 
-      </p>
-    </div>
-  </div>
-
-  <div class="popup" id="churn">
-    <div id="popup-content">
-      <h2>Project Title Goes Here</h2>
-      <i class="fa fa-play-circle-o"></i> <a href="#">Demo</a> &emsp;
-      <i class="fa fa-code" style="font-weight: 700;"></i> <a href="#">Code</a> &emsp;
-      <i class="fa fa fa-file-text-o" style="font-weight: 700;"></i> <a href="#">Slides</a>
-      <h3>Overview</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nec luctus nibh. Suspendisse potenti. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Donec facilisis, nulla at vulputate dictum, sapien elit congue enim, at aliquet nisl lorem in arcu. Proin tincidunt, lorem nec ullamcorper euismod, justo nisi luctus massa, vitae feugiat augue sem at elit.</p>
-      <h3>Solution & Features</h3>
-      <ul class="features-list">
-        <li><b>Lorem Ipsum Dolor</b>: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vitae orci at nunc tempor fermentum.</li>
-        <li><b>Vestibulum Ante Ipsum</b>: Integer posuere, justo in dictum egestas, nunc lacus euismod nunc, a tristique mauris odio non magna.</li>
-        <li><b>Curabitur Dignissim Nisi</b>: Praesent nec velit nec ipsum faucibus pretium. Curabitur sit amet erat a justo tincidunt bibendum.</li>
-      </ul>      
-      <h3>Tools & Tech</h3>
-      <p>Tool1 
-        <span style="color: #2b6777;">•</span> 
-         Tech1 
-        <span style="color: #2b6777;">•</span>
-         Tool2
-        <span style="color: #2b6777;">•</span>
-         Tool3
-        <span style="color: #2b6777;">•</span>
-         Tech2 
-      </p>
-    </div>
-  </div>
-
-  <div class="popup" id="sustainability-dashboard">
-    <div id="popup-content">
-      <h2>Project Title Goes Here</h2>
-      <i class="fa fa-play-circle-o"></i> <a href="#">Demo</a> &emsp;
-      <i class="fa fa-code" style="font-weight: 700;"></i> <a href="#">Code</a> &emsp;
-      <i class="fa fa fa-file-text-o" style="font-weight: 700;"></i> <a href="#">Slides</a>
-      <h3>Overview</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nec luctus nibh. Suspendisse potenti. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Donec facilisis, nulla at vulputate dictum, sapien elit congue enim, at aliquet nisl lorem in arcu. Proin tincidunt, lorem nec ullamcorper euismod, justo nisi luctus massa, vitae feugiat augue sem at elit.</p>
-      <h3>Solution & Features</h3>
-      <ul class="features-list">
-        <li><b>Lorem Ipsum Dolor</b>: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vitae orci at nunc tempor fermentum.</li>
-        <li><b>Vestibulum Ante Ipsum</b>: Integer posuere, justo in dictum egestas, nunc lacus euismod nunc, a tristique mauris odio non magna.</li>
-        <li><b>Curabitur Dignissim Nisi</b>: Praesent nec velit nec ipsum faucibus pretium. Curabitur sit amet erat a justo tincidunt bibendum.</li>
-      </ul>      
-      <h3>Tools & Tech</h3>
-      <p>Tool1 
-        <span style="color: #2b6777;">•</span> 
-         Tech1 
-        <span style="color: #2b6777;">•</span>
-         Tool2
-        <span style="color: #2b6777;">•</span>
-         Tool3
-        <span style="color: #2b6777;">•</span>
-         Tech2 
-      </p>
-    </div>
-  </div>
-
-  <div class="popup" id="figma-web">
-    <div id="popup-content">
-      <h2>Project Title Goes Here</h2>
-      <i class="fa fa-play-circle-o"></i> <a href="#">Demo</a> &emsp;
-      <i class="fa fa-code" style="font-weight: 700;"></i> <a href="#">Code</a> &emsp;
-      <i class="fa fa fa-file-text-o" style="font-weight: 700;"></i> <a href="#">Slides</a>
-      <h3>Overview</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nec luctus nibh. Suspendisse potenti. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Donec facilisis, nulla at vulputate dictum, sapien elit congue enim, at aliquet nisl lorem in arcu. Proin tincidunt, lorem nec ullamcorper euismod, justo nisi luctus massa, vitae feugiat augue sem at elit.</p>
-      <h3>Solution & Features</h3>
-      <ul class="features-list">
-        <li><b>Lorem Ipsum Dolor</b>: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vitae orci at nunc tempor fermentum.</li>
-        <li><b>Vestibulum Ante Ipsum</b>: Integer posuere, justo in dictum egestas, nunc lacus euismod nunc, a tristique mauris odio non magna.</li>
-        <li><b>Curabitur Dignissim Nisi</b>: Praesent nec velit nec ipsum faucibus pretium. Curabitur sit amet erat a justo tincidunt bibendum.</li>
-      </ul>      
-      <h3>Tools & Tech</h3>
-      <p>Tool1 
-        <span style="color: #2b6777;">•</span> 
-         Tech1 
-        <span style="color: #2b6777;">•</span>
-         Tool2
-        <span style="color: #2b6777;">•</span>
-         Tool3
-        <span style="color: #2b6777;">•</span>
-         Tech2 
-      </p>
-    </div>
-  </div>
-
-  <div class="popup" id="figma-hr">
-    <div id="popup-content">
-      <h2>Project Title Goes Here</h2>
-      <i class="fa fa-play-circle-o"></i> <a href="#">Demo</a> &emsp;
-      <i class="fa fa-code" style="font-weight: 700;"></i> <a href="#">Code</a> &emsp;
-      <i class="fa fa fa-file-text-o" style="font-weight: 700;"></i> <a href="#">Slides</a>
-      <h3>Overview</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nec luctus nibh. Suspendisse potenti. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Donec facilisis, nulla at vulputate dictum, sapien elit congue enim, at aliquet nisl lorem in arcu. Proin tincidunt, lorem nec ullamcorper euismod, justo nisi luctus massa, vitae feugiat augue sem at elit.</p>
-      <h3>Solution & Features</h3>
-      <ul class="features-list">
-        <li><b>Lorem Ipsum Dolor</b>: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vitae orci at nunc tempor fermentum.</li>
-        <li><b>Vestibulum Ante Ipsum</b>: Integer posuere, justo in dictum egestas, nunc lacus euismod nunc, a tristique mauris odio non magna.</li>
-        <li><b>Curabitur Dignissim Nisi</b>: Praesent nec velit nec ipsum faucibus pretium. Curabitur sit amet erat a justo tincidunt bibendum.</li>
-      </ul>      
-      <h3>Tools & Tech</h3>
-      <p>Tool1 
-        <span style="color: #2b6777;">•</span> 
-         Tech1 
-        <span style="color: #2b6777;">•</span>
-         Tool2
-        <span style="color: #2b6777;">•</span>
-         Tool3
-        <span style="color: #2b6777;">•</span>
-         Tech2 
-      </p>
-    </div>
-  </div>
-
-</section>
-<!---------- END PROJECTS SECTION ---------->
-
-<!---------- START CONTACT SECTION ---------->
-<section id="contact" class="contact">
-  <div class="container">
-   <div class="contact-content">
-      <div class="connect-col-1">
-        <h3>Let's start a conversation!</h3>
-        <br>
-        <p>Got a question, idea, or just want to say hi? I’d love to hear from you. Drop a message at <span>twagh.work@gmail.com</span> — I’m always up for interesting conversations.</p>
-        <br>
-        <p>P.S. You can also meet my chatbot. It’s a little digital version of me — curious, helpful, and kinda cool. (Not as smart ofcourse)</p>
-      </div>
-      <div class="connect-col-2">
-        <div class="icon-container">
-          <a class="icon" href="https://www.linkedin.com/in/titiksha-wagh/" target="_blank"><i class="fa fa-linkedin"></i></a>
-          <a class="icon" href="https://github.com/TAWagh"><i class="fa fa-github" target="_blank"></i></a>
-          <a class="icon" href="https://cdn.botpress.cloud/webchat/v2.3/shareable.html?configUrl=https://files.bpcontent.cloud/2025/04/19/00/20250419005853-8JAEX68T.json"><i class="fa fa-comments-o" target="_blank"></i></a>
-        </div>
-      </div>
-   </div>
-  </div>
 </section>  
 <!---------- END CONTACT SECTION ---------->
 
@@ -551,11 +292,9 @@
 
 <!-- Particles.js Library -->
 <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-<!--AOS Library for Animations -->
-<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 <!--Botpress Chatbot -->
-<script src="https://cdn.botpress.cloud/webchat/v2.3/inject.js"></script>
-<script src="https://files.bpcontent.cloud/2025/04/19/00/20250419005853-XEL7B0C2.js"></script>
+<script src="https://cdn.botpress.cloud/webchat/v2.4/inject.js"></script>
+<script src="https://files.bpcontent.cloud/2025/04/21/22/20250421223835-BQHLWG6T.js"></script>
 <!--JS Code--> 
 <script src="assets/js/script.js"></script> 
 
