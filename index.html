@@ -41,7 +41,7 @@
           <span class="amp">&</span>
           <span class="technology">Technology</span>
         </h1>
-        <h6>Hi there! I’m <b>Titiksha Wagh </b><i>(tee-tik-shaw)</i> — a business technologist at the intersection of <b>data, product an strategy</b>. I break down complex problems, build data-enabled solutions, and optimize user experiences.</h6>
+        <h6>Hi there! I’m <b>Titiksha Wagh </b><i>(tee-tik-shaw)</i> — a business technologist at the intersection of <b>data, product and strategy</b>. I break down complex problems, build data-enabled solutions, and optimize user experiences.</h6>
         <div class="buttons">
           <div class="btn">
             <a href="#projects">See Projects</a>
@@ -143,7 +143,7 @@
       <div class="tab active" onclick="filterProjects('all', event)">Featured</div>
       <div class="tab" onclick="filterProjects('gen-ai', event)">Gen AI</div>
       <div class="tab" onclick="filterProjects('business-analytics', event)"> Analytics</div>
-      <div class="tab" onclick="filterProjects('product-design', event)"> Design</div>
+      <div class="tab" onclick="filterProjects('design', event)"> Design</div>
     </div>
     <div class="card-container" id="project-list">
 
@@ -155,36 +155,191 @@
           <div class="tags">
             <span class="tag">Python</span>
             <span class="tag">LangChain</span>
-            <span class="tag">API Integration</span>
+            <span class="tag">API </span>
           </div>
         </div>
       </div>
 
+
+      <div class="card" data-category="gen-ai" onclick="openPopup('n8n-workflow')">
+          <img src="assets/img/test.jpg">
+          <div class="card-content">
+            <h3>N8N Automation Workflow</h3>
+            <div class="tags">
+              <span class="tag">Automation</span>
+              <span class="tag">N8N</span>
+            </div>
+          </div>
+      </div>
+
+      <div class="card" data-category="gen-ai" onclick="openPopup('botpress-chatbot')">
+          <img src="assets/img/test.jpg">
+          <div class="card-content">
+            <h3>Botpress Chatbot</h3>
+            <div class="tags">
+              <span class="tag">Botpress</span>
+              <span class="tag">Chatbot</span>
+            </div>
+          </div>
+      </div>
+
+      <div class="card" data-category="gen-ai" onclick="openPopup('database-chatbot')">
+          <img src="assets/img/test.jpg">
+          <div class="card-content">
+            <h3>Database Chatbot</h3>
+            <div class="tags">
+              <span class="tag">LLM</span>
+              <span class="tag">RAG</span>
+            </div>
+          </div>
+      </div>
+
+      <div class="card" data-category="gen-ai" onclick="openPopup('krach-rag')">
+          <img src="assets/img/test.jpg">
+          <div class="card-content">
+            <h3>Krach Institute Q&A RAG Bot</h3>
+            <div class="tags">
+              <span class="tag">RAG</span>
+              <span class="tag">LLM</span>
+            </div>
+          </div>
+      </div>
+
+      <div class="card" data-category="gen-ai" onclick="openPopup('jd-to-cover-letter')">
+          <img src="assets/img/test.jpg">
+          <div class="card-content">
+            <h3>Cover Letter Generator</h3>
+            <div class="tags">
+              <span class="tag">LangChain</span>
+              <span class="tag">LLM</span>
+            </div>
+          </div>
+      </div>
 
       <!-- Business Analytics Projects -->
 
-      <div class="card" data-category="business-analytics" onclick="openPopup('telecom-churn')">
-        <img src="assets/img/test.jpg">
-        <div class="card-content">
-          <h3>Churn Analysis Telecom</h3>
-          <div class="tags">
-            <span class="tag">ML</span>
-            <span class="tag">Python</span>
+      <div class="card" data-category="business-analytics" onclick="openPopup('tableau-sustainability')">
+          <img src="assets/img/test.jpg">
+          <div class="card-content">
+            <h3>Sustainability Dashboard</h3>
+            <div class="tags">
+              <span class="tag">Tableau</span>
+              <span class="tag">Visualization</span>
+            </div>
           </div>
-        </div>
       </div>
 
-    
-      <!-- Product Design Projects -->
-      <div class="card" data-category="product-design" onclick="openPopup('my-portfolio')">
-        <img src="assets/img/test.jpg">
-        <div class="card-content">
-          <h3>Figma Web Design</h3>
-          <div class="tags">
-            <span class="tag">Figma</span>
-            <span class="tag">UI/UX</span>
+      <div class="card" data-category="business-analytics" onclick="openPopup('churn-analysis')">
+          <img src="assets/img/test.jpg">
+          <div class="card-content">
+            <h3>Telecom Churn Analysis</h3>
+            <div class="tags">
+              <span class="tag">ML</span>
+              <span class="tag">Python</span>
+            </div>
           </div>
-        </div>
+      </div>
+
+      <div class="card" data-category="business-analytics" onclick="openPopup('sap-predictive-maintenance')">
+          <img src="assets/img/test.jpg">
+          <div class="card-content">
+            <h3>SAP Predictive Maintenance</h3>
+            <div class="tags">
+              <span class="tag">SAP</span>
+              <span class="tag">ML</span>
+            </div>
+          </div>
+      </div>
+
+      <div class="card" data-category="business-analytics" onclick="openPopup('customer-segmentation')">
+          <img src="assets/img/test.jpg">
+          <div class="card-content">
+            <h3>Customer Segmentation</h3>
+            <div class="tags">
+              <span class="tag">ML</span>
+              <span class="tag">Clustering</span>
+            </div>
+          </div>
+      </div>
+
+      <div class="card" data-category="business-analytics" onclick="openPopup('stocks-clustering')">
+          <img src="assets/img/test.jpg">
+          <div class="card-content">
+            <h3>Stocks Clustering</h3>
+            <div class="tags">
+              <span class="tag">ML</span>
+              <span class="tag">Clustering</span>
+            </div>
+          </div>
+      </div>
+
+      <div class="card" data-category="business-analytics" onclick="openPopup('algo-trading')">
+          <img src="assets/img/test.jpg">
+          <div class="card-content">
+            <h3>Algorithmic Trading</h3>
+            <div class="tags">
+              <span class="tag">Python</span>
+              <span class="tag">Finance</span>
+            </div>
+          </div>
+      </div>
+
+
+      <!--  Design & Prototyping Projects  -->
+
+      <div class="card" data-category="design" onclick="openPopup('figma-web-design')">
+          <img src="assets/img/test.jpg">
+          <div class="card-content">
+            <h3>Figma Web Design</h3>
+            <div class="tags">
+              <span class="tag">Figma</span>
+              <span class="tag">UI/UX</span>
+            </div>
+          </div>
+      </div>
+
+      <div class="card" data-category="design" onclick="openPopup('figma-hr-platform')">
+          <img src="assets/img/test.jpg">
+          <div class="card-content">
+            <h3>Figma HR Platform</h3>
+            <div class="tags">
+              <span class="tag">Figma</span>
+              <span class="tag">Design</span>
+            </div>
+          </div>
+      </div>
+
+      <div class="card" data-category="design" onclick="openPopup('replit-work-tracker')">
+          <img src="assets/img/test.jpg">
+          <div class="card-content">
+            <h3>Replit Work Tracker</h3>
+            <div class="tags">
+              <span class="tag">Replit</span>
+              <span class="tag">Python</span>
+            </div>
+          </div>
+      </div>
+
+      <div class="card" data-category="design" onclick="openPopup('ai-music-visualizer')">
+          <img src="assets/img/test.jpg">
+          <div class="card-content">
+            <h3>AI Music Visualizer</h3>
+            <div class="tags">
+              <span class="tag">AI</span>
+              <span class="tag">Creative Coding</span>
+            </div>
+          </div>
+      </div>
+
+      <div class="card" data-category="design" onclick="openPopup('js-creative-coding')">
+          <img src="assets/img/test.jpg">
+          <div class="card-content">
+            <h3>JavaScript Creative Coding</h3>
+            <div class="tags">
+              <span class="tag">JavaScript</span>
+              <span class="tag">Creative Coding</span>
+            </div>
+          </div>
       </div>
 
   <!-- Popups -->
