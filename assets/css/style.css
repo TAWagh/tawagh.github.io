@@ -30,9 +30,8 @@
     --wave-color: var(--color-accent);
 
     /* Precomputed alpha variants (hex + alpha) */
-    --color-accent-glow: #00acac4d;
     --color-border: #00acac40;
-    --color-accent-05: #00acac0d;
+    --color-accent-transparent: #00acac0d;
     --wave-opacity: 0.15;
     
     --font-weight-bold: 700;
@@ -47,9 +46,8 @@ body.light-mode {
     --color-accent: #036378;
     --wave-color: #9ba5a9;
 
-    --color-accent-glow: #036a7826;
     --color-border: #036a7833;
-    --color-accent-05: #036a780d;
+    --color-accent-transparent: #036a780d;
     --wave-opacity: 0.08;
     
     --font-weight-bold: 700;
@@ -162,7 +160,7 @@ body.light-mode .perspective-toggle-container {
     left: var(--toggle-pad-x);
     width: calc((100% - (var(--toggle-pad-x) * 2)) / 2);
     border-radius: 999px;
-    background: var(--color-accent-05);
+    background: var(--color-accent-transparent);
     border: 1px solid var(--color-border);
     box-shadow: none;
     transform: translateX(0);
@@ -205,7 +203,7 @@ body.light-mode .perspective-toggle-container {
     cursor: pointer; 
     transition: all var(--transition-btn);
     border: 1px solid var(--color-border);
-    background: var(--color-accent-05);
+    background: var(--color-accent-transparent);
     color: var(--color-text-primary);
     position: relative; overflow: hidden; z-index: 1;
 }
@@ -230,7 +228,7 @@ body.light-mode .perspective-toggle-container {
 
 /* Solid buttons unfill from bottom to top */
 .btn-filled { 
-    background: var(--color-accent-05); 
+    background: var(--color-accent-transparent); 
     color: #fff; 
     border-color: var(--color-accent); 
 }
@@ -254,7 +252,7 @@ body.light-mode .perspective-toggle-container {
     display: inline-flex; align-items: center;
     padding: 0.35em 0.85em; border: 1px solid var(--color-border);
     border-radius: 999px; color: var(--color-accent);
-    background: var(--color-accent-05); line-height: 1;
+    background: var(--color-accent-transparent); line-height: 1;
 }
 
 /* ==========================================================================
@@ -472,7 +470,7 @@ body:not(.light-mode) .project-image-wrapper {
 .project-image-placeholder {
     width: 100%;
     height: 100%;
-    background-color: var(--color-accent-05);
+    background-color: var(--color-accent-transparent);
     position: absolute;
     top: 0;
     left: 0;
@@ -515,7 +513,8 @@ body:not(.light-mode) .project-image-wrapper {
     text-transform: uppercase; letter-spacing: 0.2em;
     color: var(--color-text-secondary); transition: color var(--transition-base);
 }
-.contact-links a:hover { color: var(--color-accent); text-shadow: 0 0 10px var(--color-accent-glow); }
+.contact-links a:hover { 
+    color: var(--color-accent); }
 
 /* ==========================================================================
    RESPONSIVE DESIGN
