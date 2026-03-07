@@ -1,480 +1,178 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Portfolio - Titiksha Ajay Wagh">
-    <meta name="keywords" content="Titiksha Wagh, Portfolio, Projects, Data, Strategy,Product, AI">
-    <meta name="author" content="Titiksha Wagh">
-    <title>Titiksha Wagh</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Titiksha Wagh | AI Portfolio</title>
+    
+    <!-- Typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="assets/css/responsive.css">    
-    <link rel="icon" href="assets/img/favicon.png" type="image">
+    <link rel="stylesheet" href="assets/css/responsive.css">
 </head>
+<body class="light-mode">
 
-<body>
+    <!-- GLOBAL CANVAS MOVED HERE -->
+    <canvas id="interactive-canvas" aria-hidden="true"></canvas>
 
-<!---------- START NAVIGATION BAR ---------->
-<header> 
-  <nav class="navbar">
-    <div class="container">
-    <div class="nav-logo">T. Wagh</div>
-    <ul class="nav-links">
-      <li><a href="#home" class="active">HOME</a></li>
-      <li><a href="#about">ABOUT</a></li>
-      <li><a href="#projects">PROJECTS</a></li>
-      <li><a href="#contact">CONTACT</a></li>
-    </ul>
-   </div>
-  </nav>
-</header>
-<!---------- END NAVIGATION BAR ---------->
-
-<!---------- START HOME SECTION ---------->
-<section id="home" class="home">
-  <div id="particles-js"></div> <!-- Particle.js background -->
-    <div class="home-content">
-        <h4>Bridging gaps between</h4>
-        <h1 class="headline">
-          <span class="business">Business</span>
-          <span class="amp">&</span>
-          <span class="technology">Technology</span>
-        </h1>
-        <h6>Hi there! I’m <b>Titiksha Wagh </b><i>(tee-tik-shaw)</i> — a business technologist at the intersection of <b>data, product and strategy</b>. I break down complex problems, build data-enabled solutions, and optimize user experiences.</h6>
-        <div class="buttons">
-          <div class="btn">
-            <a href="#projects">See Projects</a>
-          </div>
-          <div class="btn">
-            <a href="https://cdn.botpress.cloud/webchat/v2.4/shareable.html?configUrl=https://files.bpcontent.cloud/2025/04/21/22/20250421223835-4U6XE04U.json" target="_blank">Chat with T2</a>
-          </div>
-        </div>
+    <!-- PERSPECTIVE TOGGLE -->
+    <div class="perspective-toggle-container" role="group" aria-label="Perspective Toggle">
+        <span class="perspective-indicator" aria-hidden="true"></span>
+        <button type="button" class="perspective-option active" id="businessLabel" aria-pressed="true">
+            Business Perspective
+        </button>
+        <button type="button" class="perspective-option" id="techLabel" aria-pressed="false">
+            Technology Perspective
+        </button>
     </div>
-</section>
-<!---------- END HOME SECTION ---------->
 
-<!---------- START ABOUT SECTION ---------->
-<section id="about"class="about">
-  <div class="container">
-    <div class="title">
-      <h1>About Me</h1>
-    </div>
-    <div class="about-content">
-      <div class="box">
-        <p>I thrive on collaboration, whether it’s brainstorming ideas, solving problems, or building something from scratch. I bring a vision to the table, always focused on creating solutions that add value. With a background in embedded systems, AI, and IoT, I’m fascinated by how these technologies tackle real-world challenges.</p>
-        <br>
-        <p>Outside of work, I love swimming in the summers and ice-skating in the winters. I enjoy photography, capturing perspectives that often go unnoticed. I’m very passionate about mentorship and enjoy sharing my experiences to help others in their academic and professional journey.</p>
-    </div>
-    <div class="box">
-        <div class="aboutme-tab-container">
-          <div class="tab active" onclick="showContent('experience')">Experience</div>
-          <div class="tab" onclick="showContent('skills')">Skills</div>
-          <div class="tab" onclick="showContent('education')">Education</div>
-        </div>
+    <!-- MAIN WRAPPER (Sits over the canvas) -->
+    <main>
+        <!-- HERO SECTION -->
+        <section id="hero" class="hero">
+            <div class="hero-content">
+                <!--  STATUS -->
+                <p perspective="technology">— STATUS: RELEASE / V3.2</p>
+                <p perspective="business">— STATUS: SHIPPED</p>
 
-        <!-- Experience -->
-        <div id="experience" class="tab-content active">
-              <table>
-                <tr>
-                    <td><strong>Tandigm Health</strong></td>
-                    <td><i>Sr. Analyst, Information & Performance Management</i></td>
-                    <td>2024</td>
-                </tr>
-                <tr>
-                    <td><strong>SAP America</strong></td>
-                    <td><i>Associate, Cloud Business Operations & Insights</i></td>
-                    <td>2022</td>
-                </tr>
-                <tr>
-                    <td><strong>Deloitte</strong></td>
-                    <td><i>Analyst, Business Intelligence</i></td>
-                    <td>2021</td>
-                </tr>
-            </table>
-        </div>
-        
-        <!-- Skills -->
-        <div id="skills" class="tab-content">
-          <table>
-            <tr>
-                <td><strong>Programming Languages</strong></td>
-                <td><i>Embedded C, C++, Python (Pandas, NumPy, Matplotlib, TensorFlow), HTML, CSS, JavaScript </i></td>
-            </tr>
-            <tr>
-                <td><strong>Analytics Toolkit</strong></td>
-                <td><i>SQL, Tableau, PowerBI, SAP Datasphere, SAP BW, Advanced Excel (Pivot Tables), SAP Analytics Cloud </i></td>
-            </tr>
-            <tr>
-                <td><strong>Collaboration</strong></td>
-                <td><i>Jira, Aha!, Asana, Trello, Smartsheet, Power Automate, SharePoint, Office 365 </i></td>
-            </tr>
-          </table>
-        </div>
+                <!--  TITLE -->
+                <h1>Hi there! I'm <span class="name-lock"><span class="name-highlight" data-pronunciation="Tee-tik-sha" tabindex="0">Titiksha Wagh</span>,</span> a product thinker who loves building with data & AI.</h1>
 
-        <!-- Education -->
-        <div id="education" class="tab-content">
-          <table>
-            <tr>
-                <td><strong>Master of Science</strong></td>
-                <td><i>Engineering Management</i></td>
-                <td>Purdue University</td>
-            </tr>
-            <tr>
-                <td><strong>Bachelor of Technology</strong></td>
-                <td><i>Electrical & Electronics Engineering</i></td>
-                <td>Manipal University</td>
-            </tr>
-          </table>
-        </div>
-    </div>
-  </div>
-</div>
-</section>
-<!---------- END ABOUT SECTION ---------->
+                <div class="hero-bio" perspective="technology">
+                    <p>I have a background in electrical engineering, with a focus on embedded systems and AI. I enjoy building things and experimenting to see how technologies can be turned into practical tools that solve real-world problems. When I'm not vibe coding away in my room, you'll usually find me swimming in the summer or ice skating in the winter.</p>
+                </div>
+                <div class="hero-bio" perspective="business">
+                    <p>I'm a product and strategy professional with four years of experience working at the intersection of business, technology, and data. I enjoy collaborating across teams, shaping ideas into clear product direction, and bringing structure and vision to complex problems. When I'm not working on personal projects, you'll usually find me swimming in the summer or ice skating in the winter.</p>
+                </div>
 
-<!---------- START PROJECTS SECTION ---------->
-<section id="projects" class="projects">
-  <div class="container">
-    <div class="title">
-      <h1>Projects</h1>
-    </div>
-    <div class="project-tab-container">
-      <div class="tab active" onclick="filterProjects('all', event)">Featured</div>
-      <div class="tab" onclick="filterProjects('gen-ai', event)">Gen AI</div>
-      <div class="tab" onclick="filterProjects('business-analytics', event)"> Analytics</div>
-      <div class="tab" onclick="filterProjects('design', event)"> Design</div>
-    </div>
-    <div class="card-container" id="project-list">
-
-      <!-- Generative AI Projects -->
-      <div class="card" data-category="gen-ai" onclick="openPopup('travel-itinerary-generator')">
-        <img src="assets/img/test.jpg">
-        <div class="card-content">
-          <h3>LangChain Travel Itinerary</h3>
-          <div class="tags">
-            <span class="tag">Python</span>
-            <span class="tag">LangChain</span>
-            <span class="tag">API </span>
-          </div>
-        </div>
-      </div>
-
-
-      <div class="card" data-category="gen-ai" onclick="openPopup('n8n-workflow')">
-          <img src="assets/img/test.jpg">
-          <div class="card-content">
-            <h3>N8N Automation Workflow</h3>
-            <div class="tags">
-              <span class="tag">Automation</span>
-              <span class="tag">N8N</span>
+                <!--  ACTIONS -->
+                <div class="hero-actions">
+                    <a href="#work" class="btn btn-filled">View Projects</a>
+                    <a href="#contact" class="btn">Get in Touch</a>
+                </div>
             </div>
-          </div>
-      </div>
+            
+            <div perspective="technology" class="scroll-indicator">System.Scroll()</div>
+            <div perspective="business" class="scroll-indicator">Scroll to Explore</div>
+        </section>
 
-      <div class="card" data-category="gen-ai" onclick="openPopup('botpress-chatbot')">
-          <img src="assets/img/test.jpg">
-          <div class="card-content">
-            <h3>Botpress Chatbot</h3>
-            <div class="tags">
-              <span class="tag">Botpress</span>
-              <span class="tag">Chatbot</span>
+        <!-- HORIZONTAL SCROLL GALLERY -->
+        <section id="work" class="horizontal-scroll-wrapper">
+            <h2 class="project-title mobile-project-title">Project Gallery</h2>
+            <div class="sticky-container">
+                <div class="horizontal-track" id="track">
+                    
+                    <!-- PROJECT 1 -->
+                    <article class="project-panel">
+                        <div class="project-content">
+                            <div class="project-info">
+                                <span class="project-number" perspective="technology">{ID:"01", DOMAIN:"EdTech"}</span>
+                                <span class="project-number" perspective="business">01 | EdTech</span>
+                                <h2 class="project-title">Context Clues</h2>
+                                
+                                <!-- MODULAR DESCRIPTION -->
+                                <p class="project-desc" perspective="technology">Context Clues uses a LangChain-powered AI feedback loop that evaluates user guesses and dynamically generates progressively clearer contextual sentences to guide learning. The system is built with a React frontend, FastAPI Python backend, and SQLite database to support an adaptive vocabulary training experience.</p>
+                                <p class="project-desc" perspective="business">Context Clues is an AI-powered vocabulary learning web app designed for lifelong learners, helping users infer word meanings through contextual scaffolding rather than memorizing static definitions. The product focuses on improving long-term retention by training users to recognize nuance through progressively structured sentence clues.</p>
+                                
+                                <!-- MODULAR TAGS -->
+                                <div class="project-tags" perspective="technology">
+                                    <span class="tag">LangChain</span>
+                                    <span class="tag">FastAPI</span>
+                                    <span class="tag">SQLite</span>
+                                    <span class="tag">TailwindCSS</span>
+                                </div>
+                                <div class="project-tags" perspective="business">
+                                    <span class="tag">LLM Orchestration</span>
+                                    <span class="tag">Adaptive Feedback Systems</span>
+                                    <span class="tag">UX/UI</span>
+                                </div>
+
+                                <!-- MODULAR BUTTONS -->
+                                <div class="project-actions" perspective="technology">
+                                    <a href="https://context-clues-orcin.vercel.app/" class="btn btn-filled" target="_blank" rel="noopener noreferrer">Launch App</a>
+                                    <a href="#" class="btn" target="_blank" rel="noopener noreferrer">Source Code</a>
+                                </div>
+                                <div class="project-actions" perspective="business">
+                                    <a href="https://context-clues-orcin.vercel.app/" class="btn btn-filled" target="_blank" rel="noopener noreferrer">Launch App</a>
+                                    <a href="#" class="btn" target="_blank" rel="noopener noreferrer">Case Study</a>
+                                </div>
+                            </div>
+                            <div class="project-image-wrapper">
+                                <img src="assets/img/test_img.png" alt="Context Clues project preview" class="project-image-placeholder" loading="lazy">
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- PROJECT 2: COMING SOON -->
+                    <article class="project-panel">
+                        <div class="project-content">
+                            <div class="project-info">
+                                <span class="project-number" perspective="technology">{ID:"02", DOMAIN:"FinTech"}</span>
+                                <span class="project-number" perspective="business">02 | Coming Soon</span>
+                                <h2 class="project-title">Coming Soon</h2>
+                                
+                                <!-- MODULAR DESCRIPTION -->
+                                <p class="project-desc" perspective="technology">A new project is currently in development with a focus on practical AI systems, robust architecture, and production-ready execution.</p>
+                                <p class="project-desc" perspective="business">A new case study is in progress, centered on product strategy, cross-team collaboration, and measurable business impact.</p>
+
+                                <!-- MODULAR TAGS -->
+                                <div class="project-tags" perspective="technology">
+                                    <span class="tag">In Progress</span>
+                                    <span class="tag">AI Systems</span>
+                                    <span class="tag">Architecture</span>
+                                </div>
+                                <div class="project-tags" perspective="business">
+                                    <span class="tag">In Progress</span>
+                                    <span class="tag">Strategy</span>
+                                    <span class="tag">Impact</span>
+                                </div>
+
+                                <!-- MODULAR BUTTONS -->
+                                <div class="project-actions" perspective="technology">
+                                    <a href="#contact" class="btn btn-filled" target="_blank" rel="noopener noreferrer">Notify Me</a>
+                                </div>
+                                <div class="project-actions" perspective="business">
+                                    <a href="#contact" class="btn btn-filled" target="_blank" rel="noopener noreferrer">Get Updates</a>
+                                </div>
+                            </div>
+                            <div class="project-image-wrapper">
+                                <img src="assets/img/test_img.png" alt="Coming soon project preview" class="project-image-placeholder" loading="lazy">
+                            </div>
+                        </div>
+                    </article>
+                </div>
             </div>
-          </div>
-      </div>
+        </section>
 
-      <div class="card" data-category="gen-ai" onclick="openPopup('database-chatbot')">
-          <img src="assets/img/test.jpg">
-          <div class="card-content">
-            <h3>Database Chatbot</h3>
-            <div class="tags">
-              <span class="tag">LLM</span>
-              <span class="tag">RAG</span>
+        <!-- CONTACT SECTION -->
+        <section id="contact" class="contact-section">
+            <!--  TITLE -->
+            <h2>Let's Connect!</h2>
+            
+            <!-- DESCRIPTION -->
+            <p>I'm always excited to connect, share ideas, and collaborate on interesting projects. I'm also very passionate about mentorship and enjoy sharing my experiences to help others navigate their professional and academic journeys. If you'd like to work together or just chat, don't hesitate to reach out.</p>
+            
+            <!-- BUTTON -->
+            <a href="#" class="btn btn-filled" data-copy-email="twagh.career@gmail.com">twagh.career@gmail.com</a>
+            <div class="contact-links">
+                <a href="#">Medium</a>
+                <a href="#">LinkedIn</a>
+                <a href="#">GitHub</a>
             </div>
-          </div>
-      </div>
+        </section>
+    </main>
 
-      <div class="card" data-category="gen-ai" onclick="openPopup('krach-rag')">
-          <img src="assets/img/test.jpg">
-          <div class="card-content">
-            <h3>Krach Institute Q&A RAG Bot</h3>
-            <div class="tags">
-              <span class="tag">RAG</span>
-              <span class="tag">LLM</span>
-            </div>
-          </div>
-      </div>
-
-      <div class="card" data-category="gen-ai" onclick="openPopup('jd-to-cover-letter')">
-          <img src="assets/img/test.jpg">
-          <div class="card-content">
-            <h3>Cover Letter Generator</h3>
-            <div class="tags">
-              <span class="tag">LangChain</span>
-              <span class="tag">LLM</span>
-            </div>
-          </div>
-      </div>
-
-      <!-- Business Analytics Projects -->
-
-      <div class="card" data-category="business-analytics" onclick="openPopup('tableau-sustainability')">
-          <img src="assets/img/test.jpg">
-          <div class="card-content">
-            <h3>Sustainability Dashboard</h3>
-            <div class="tags">
-              <span class="tag">Tableau</span>
-              <span class="tag">Visualization</span>
-            </div>
-          </div>
-      </div>
-
-      <div class="card" data-category="business-analytics" onclick="openPopup('churn-analysis')">
-          <img src="assets/img/test.jpg">
-          <div class="card-content">
-            <h3>Telecom Churn Analysis</h3>
-            <div class="tags">
-              <span class="tag">ML</span>
-              <span class="tag">Python</span>
-            </div>
-          </div>
-      </div>
-
-      <div class="card" data-category="business-analytics" onclick="openPopup('sap-predictive-maintenance')">
-          <img src="assets/img/test.jpg">
-          <div class="card-content">
-            <h3>SAP Predictive Maintenance</h3>
-            <div class="tags">
-              <span class="tag">SAP</span>
-              <span class="tag">ML</span>
-            </div>
-          </div>
-      </div>
-
-      <div class="card" data-category="business-analytics" onclick="openPopup('customer-segmentation')">
-          <img src="assets/img/test.jpg">
-          <div class="card-content">
-            <h3>Customer Segmentation</h3>
-            <div class="tags">
-              <span class="tag">ML</span>
-              <span class="tag">Clustering</span>
-            </div>
-          </div>
-      </div>
-
-      <div class="card" data-category="business-analytics" onclick="openPopup('stocks-clustering')">
-          <img src="assets/img/test.jpg">
-          <div class="card-content">
-            <h3>Stocks Clustering</h3>
-            <div class="tags">
-              <span class="tag">ML</span>
-              <span class="tag">Clustering</span>
-            </div>
-          </div>
-      </div>
-
-      <div class="card" data-category="business-analytics" onclick="openPopup('algo-trading')">
-          <img src="assets/img/test.jpg">
-          <div class="card-content">
-            <h3>Algorithmic Trading</h3>
-            <div class="tags">
-              <span class="tag">Python</span>
-              <span class="tag">Finance</span>
-            </div>
-          </div>
-      </div>
-
-
-      <!--  Design & Prototyping Projects  -->
-
-      <div class="card" data-category="design" onclick="openPopup('figma-web-design')">
-          <img src="assets/img/test.jpg">
-          <div class="card-content">
-            <h3>Figma Web Design</h3>
-            <div class="tags">
-              <span class="tag">Figma</span>
-              <span class="tag">UI/UX</span>
-            </div>
-          </div>
-      </div>
-
-      <div class="card" data-category="design" onclick="openPopup('figma-hr-platform')">
-          <img src="assets/img/test.jpg">
-          <div class="card-content">
-            <h3>Figma HR Platform</h3>
-            <div class="tags">
-              <span class="tag">Figma</span>
-              <span class="tag">Design</span>
-            </div>
-          </div>
-      </div>
-
-      <div class="card" data-category="design" onclick="openPopup('replit-work-tracker')">
-          <img src="assets/img/test.jpg">
-          <div class="card-content">
-            <h3>Replit Work Tracker</h3>
-            <div class="tags">
-              <span class="tag">Replit</span>
-              <span class="tag">Python</span>
-            </div>
-          </div>
-      </div>
-
-      <div class="card" data-category="design" onclick="openPopup('ai-music-visualizer')">
-          <img src="assets/img/test.jpg">
-          <div class="card-content">
-            <h3>AI Music Visualizer</h3>
-            <div class="tags">
-              <span class="tag">AI</span>
-              <span class="tag">Creative Coding</span>
-            </div>
-          </div>
-      </div>
-
-      <div class="card" data-category="design" onclick="openPopup('js-creative-coding')">
-          <img src="assets/img/test.jpg">
-          <div class="card-content">
-            <h3>JavaScript Creative Coding</h3>
-            <div class="tags">
-              <span class="tag">JavaScript</span>
-              <span class="tag">Creative Coding</span>
-            </div>
-          </div>
-      </div>
-
-  <!-- Popups -->
-  <div class="popup-overlay" id="popup-overlay" onclick="closePopup()"></div>
-
-  <div class="popup" id="travel-itinerary-generator">
-    <div id="popup-content">
-      <h2>Project Title Goes Here</h2>
-      <i class="fa fa-play-circle-o"></i> <a href="#">Demo</a> &emsp;
-      <i class="fa fa-code" style="font-weight: 700;"></i> <a href="#">Code</a> &emsp;
-      <i class="fa fa fa-file-text-o" style="font-weight: 700;"></i> <a href="#">Slides</a>
-      <h3>Overview</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nec luctus nibh. Suspendisse potenti. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Donec facilisis, nulla at vulputate dictum, sapien elit congue enim, at aliquet nisl lorem in arcu. Proin tincidunt, lorem nec ullamcorper euismod, justo nisi luctus massa, vitae feugiat augue sem at elit.</p>
-      <h3>Solution & Features</h3> 
-      <ul class="features-list">
-        <li><b>AI-Powered Itinerary Generation</b>: Takes  user preferances as inputs to generate a personalized, multi-day itinerary.</li>
-        <li><b>Google Maps Integration</b>: Extracts location names from the itinerary, uses the Google Maps API to geolocate them, and prepares a downloadable file for Google My Maps.</li>
-        <li><b>Interactive Map Visualization</b>: Visualizes each day’s itinerary with clear, color-coded pins using an embedded map view. Great for quick visual planning or sharing with others.</li>
-      </ul>      
-      <h3>Tools & Tech</h3>
-      <p>LangChain  
-        <span style="color: #2b6777;">•</span> 
-         Python  
-        <span style="color: #2b6777;">•</span>
-         Google Maps API
-        <span style="color: #2b6777;">•</span>
-         Streamlit 
-        <span style="color: #2b6777;">•</span>
-         OpenAI API 
-      </p>
-    </div>
-  </div>
-
-  <div class="popup" id="telecom-churn">
-    <div id="popup-content">
-      <h2>Project Title Goes Here</h2>
-      <i class="fa fa-play-circle-o"></i> <a href="#">Demo</a> &emsp;
-      <i class="fa fa-code" style="font-weight: 700;"></i> <a href="#">Code</a> &emsp;
-      <i class="fa fa fa-file-text-o" style="font-weight: 700;"></i> <a href="#">Slides</a>
-      <h3>Overview</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nec luctus nibh. Suspendisse potenti. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Donec facilisis, nulla at vulputate dictum, sapien elit congue enim, at aliquet nisl lorem in arcu. Proin tincidunt, lorem nec ullamcorper euismod, justo nisi luctus massa, vitae feugiat augue sem at elit.</p>
-      <h3>Solution & Features</h3>
-      <ul class="features-list">
-        <li><b>Lorem Ipsum Dolor</b>: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vitae orci at nunc tempor fermentum.</li>
-        <li><b>Vestibulum Ante Ipsum</b>: Integer posuere, justo in dictum egestas, nunc lacus euismod nunc, a tristique mauris odio non magna.</li>
-        <li><b>Curabitur Dignissim Nisi</b>: Praesent nec velit nec ipsum faucibus pretium. Curabitur sit amet erat a justo tincidunt bibendum.</li>
-      </ul>      
-      <h3>Tools & Tech</h3>
-      <p>Tool1 
-        <span style="color: #2b6777;">•</span> 
-         Tech1 
-        <span style="color: #2b6777;">•</span>
-         Tool2
-        <span style="color: #2b6777;">•</span>
-         Tool3
-        <span style="color: #2b6777;">•</span>
-         Tech2 
-      </p>
-    </div>
-  </div>
-
-  <div class="popup" id="my-portfolio">
-    <div id="popup-content">
-      <h2>My Portfolio Website</h2>
-      <i class="fa fa-play-circle-o"></i> <a href="#">Demo</a> &emsp;
-      <i class="fa fa-code" style="font-weight: 700;"></i> <a href="#">Code</a> &emsp;
-      <i class="fa fa fa-file-text-o" style="font-weight: 700;"></i> <a href="#">Slides</a>
-      <h3>Overview</h3>
-      <p> I built my personal portfolio website from scratch to have a fully customizable space where I could showcase my work and a touch of my design sensibility. Rather than relying on templates, I wanted something that felt truly like “me”. A site that is easy to update, lightweight, and personal.</p>
-      <h3>Solution & Features</h3>
-      <ul class="features-list">
-        <li><b>Interactive Hero Section</b>: A fun and interactive hero section that grabs attention and encourages visitors to explore further.</li>
-        <li><b>Modular & Maintainable Code</b>: Clean and modular code that is easy to update and maintain, ensuring flexibility for the long run.</li>
-        <li><b>Dedicated Projects Section</b>: A well-organized card layout designed to showcase builds and highlight technical and non-technical skills.</li>
-      </ul>      
-      <h3>Tools & Tech</h3>
-      <p>Tool1 
-        <span style="color: #2b6777;">•</span> 
-         Tech1 
-        <span style="color: #2b6777;">•</span>
-         Tool2
-        <span style="color: #2b6777;">•</span>
-         Tool3
-        <span style="color: #2b6777;">•</span>
-         Tech2 
-      </p>
-    </div>
-  </div>
-</section>
-<!---------- END PROJECTS SECTION ---------->
-
-<!---------- START CONTACT SECTION ---------->
-<section id="contact" class="contact">
-  <div class="container">
-   <div class="contact-content">
-      <div class="connect-col-1">
-        <h3>Let's start a conversation!</h3>
-        <br>
-        <p>Got a question, idea, or just want to say hi? I’d love to hear from you. Drop a message at <span>twagh.work@gmail.com</span> — I’m always up for interesting conversations.</p>
-        <br>
-        <p>P.S. You can also meet my chatbot. It’s a little digital version of me — curious, helpful, and kinda cool. (Not as smart ofcourse)</p>
-      </div>
-      <div class="connect-col-2">
-        <div class="icon-container">
-          <a class="icon" href="https://www.linkedin.com/in/titiksha-wagh/" target="_blank"><i class="fa fa-linkedin"></i></a>
-          <a class="icon" href="https://github.com/TAWagh"><i class="fa fa-github" target="_blank"></i></a>
-          <a class="icon" href="https://cdn.botpress.cloud/webchat/v2.3/shareable.html?configUrl=https://files.bpcontent.cloud/2025/04/19/00/20250419005853-8JAEX68T.json"><i class="fa fa-comments-o" target="_blank"></i></a>
-        </div>
-      </div>
-   </div>
-  </div>
-</section>
-<!---------- END CONTACT SECTION ---------->
-
-<!---------- START FOOTER ---------->
-<footer class="footer">
-  <div class="logo">T. Wagh</div>
-  <ul class="nav-links">
-    <li><a href="#home">HOME</a></li>
-    <li><a href="#about">ABOUT</a></li>
-    <li><a href="#projects">PROJECTS</a></li>
-    <li><a href="#contact">CONTACT</a></li>
-  </ul>
-</footer>
-<!---------- END FOOTER ---------->
-
-
-<!-- Particles.js Library -->
-<script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-<!--Botpress Chatbot -->
-<script src="https://cdn.botpress.cloud/webchat/v2.4/inject.js"></script>
-<script src="https://files.bpcontent.cloud/2025/04/21/22/20250421223835-BQHLWG6T.js"></script>
-<!--JS Code--> 
-<script src="assets/js/script.js"></script> 
-
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+        <!-- Replaced text caret with a perfectly centered SVG -->
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M18 15l-6-6-6 6"/>
+        </svg>
+    </button>
+    <script src="assets/js/script.js"></script>
 </body>
 </html>
+
+
 
