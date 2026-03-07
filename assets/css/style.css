@@ -32,9 +32,7 @@
     /* Precomputed alpha variants (hex + alpha) */
     --color-accent-glow: #00acac4d;
     --color-border: #00acac40;
-    --color-accent-10: #00acac1a;
     --color-accent-05: #00acac0d;
-    --color-accent-03: #00acac08;
     --wave-opacity: 0.15;
     
     --font-weight-bold: 700;
@@ -51,9 +49,7 @@ body.light-mode {
 
     --color-accent-glow: #036a7826;
     --color-border: #036a7833;
-    --color-accent-10: #036a781a;
     --color-accent-05: #036a780d;
-    --color-accent-03: #036a7808;
     --wave-opacity: 0.08;
     
     --font-weight-bold: 700;
@@ -166,7 +162,7 @@ body.light-mode .perspective-toggle-container {
     left: var(--toggle-pad-x);
     width: calc((100% - (var(--toggle-pad-x) * 2)) / 2);
     border-radius: 999px;
-    background: var(--color-accent-10);
+    background: var(--color-accent-05);
     border: 1px solid var(--color-border);
     box-shadow: none;
     transform: translateX(0);
@@ -258,7 +254,7 @@ body.light-mode .perspective-toggle-container {
     display: inline-flex; align-items: center;
     padding: 0.35em 0.85em; border: 1px solid var(--color-border);
     border-radius: 999px; color: var(--color-accent);
-    background: var(--color-accent-03); line-height: 1;
+    background: var(--color-accent-05); line-height: 1;
 }
 
 /* ==========================================================================
@@ -476,7 +472,7 @@ body:not(.light-mode) .project-image-wrapper {
 .project-image-placeholder {
     width: 100%;
     height: 100%;
-    background-color: var(--color-accent-10);
+    background-color: var(--color-accent-05);
     position: absolute;
     top: 0;
     left: 0;
@@ -488,7 +484,8 @@ body:not(.light-mode) .project-image-wrapper {
 /* CONTACT SECTION */
 .contact-section {
     position: relative;
-    min-height: 100vh;
+    min-height: 100svh;
+    height: 100svh;
     display: flex;
     flex-direction: column;
     align-items: center;
