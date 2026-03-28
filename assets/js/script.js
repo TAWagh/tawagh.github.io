@@ -36,7 +36,7 @@ const PortfolioApp = (() => {
         },
         buildMesh() {
             this.mesh = [];
-            const rows = 95, cols = 90, spacingX = 110, spacingZ = 25, focalLength = 850;
+            const rows = 90, cols = 90, spacingX = 60, spacingZ = 25, focalLength = 850;
             for (let iz = 0; iz < rows; iz++) {
                 const rowPoints = [];
                 const z = iz * spacingZ;
@@ -113,7 +113,7 @@ const PortfolioApp = (() => {
             }
 
             ctx.lineWidth = 1;
-            
+
             for (let iz = 0; iz < rows - 1; iz++) {
                 ctx.beginPath();
                 for (let ix = 0; ix < cols; ix++) {
@@ -127,6 +127,7 @@ const PortfolioApp = (() => {
                 ctx.stroke();
                 ctx.restore();
             }
+
             requestAnimationFrame(() => this.animate());
         }
     };

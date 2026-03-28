@@ -9,7 +9,7 @@
     }
 
     .project-panel {
-        padding: 6vw;
+        padding: 0 8%;
     }
 
     .project-content {
@@ -112,7 +112,7 @@
         display: block;
         width: 100%;
         margin: 0;
-        padding: 1.5rem 1rem 0.75rem;
+        padding: 1.5rem 6% 0.75rem;
         line-height: 1.08;
     }
 
@@ -186,6 +186,7 @@
     .btn {
         padding: 0.72rem 1rem;
         font-size: 0.66rem;
+        min-height: 2.5rem;
         letter-spacing: 0.08em;
     }
 

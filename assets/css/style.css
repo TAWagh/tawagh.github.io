@@ -12,7 +12,7 @@
     --spacing-md: 2rem;
     --spacing-lg: 4rem;
     --spacing-xl: 8rem;
-    --panel-padding: 5vw;
+    --panel-padding: 0 10%;
 
     /* 3. ANIMATION TOKENS */
     --transition-base: 0.3s ease;
@@ -31,7 +31,7 @@
 
     /* Precomputed alpha variants (hex + alpha) */
     --color-border: #00acac40;
-    --color-accent-transparent: #00acac0d;
+    --color-accent-transparent: #00acac15;
     --wave-opacity: 0.15;
     
     --font-weight-bold: 700;
@@ -42,12 +42,12 @@ body.light-mode {
     --color-bg: #fefcfb;
     --color-surface: #ffffff;
     --color-text-primary: #0a1128;
-    --color-text-secondary: #7e7e7e;
+    --color-text-secondary: #6e6e6e;
     --color-accent: #036378;
-    --wave-color: #9ba5a9;
+    --wave-color: #65868d;
 
     --color-border: #036a7833;
-    --color-accent-transparent: #036a780d;
+    --color-accent-transparent: #036a7815;
     --wave-opacity: 0.08;
     
     --font-weight-bold: 700;
@@ -199,6 +199,8 @@ body.light-mode .perspective-toggle-container {
     padding: 0.8rem 1.8rem;
     font-family: var(--font-data);
     font-size: 0.75rem; font-weight: 500;
+    line-height: 1;
+    min-height: 2.85rem;
     text-transform: uppercase; letter-spacing: 0.1em;
     cursor: pointer; 
     transition: all var(--transition-btn);
@@ -393,7 +395,8 @@ body.light-mode .name-highlight::after {
 .hero-actions { pointer-events: auto; }
 
 .hero-actions .btn,
-.project-actions .btn {
+.project-actions .btn,
+.contact-cta {
     flex: 0 0 auto;
     width: auto;
     max-width: 100%;
