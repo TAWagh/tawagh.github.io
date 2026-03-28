@@ -146,6 +146,7 @@ const PortfolioApp = (() => {
             const toggleContainer = document.querySelector('.perspective-toggle-container');
             const techLabel = document.getElementById('techLabel');
             const businessLabel = document.getElementById('businessLabel');
+            const favicon = document.getElementById('site-favicon');
             if (!toggleContainer || !techLabel || !businessLabel) return;
 
             const setPerspective = (perspective) => {
@@ -165,6 +166,9 @@ const PortfolioApp = (() => {
                 }
 
                 toggleContainer.classList.toggle('is-technology', isTechnology);
+                if (favicon) {
+                    favicon.href = isTechnology ? 'assets/img/favicon-dark.png' : 'assets/img/favicon-light.png';
+                }
                 CanvasEngine.updateThemeColor(); // Sync canvas color on swap
             };
 
