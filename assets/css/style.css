@@ -12,7 +12,7 @@
     --spacing-md: 2rem;
     --spacing-lg: 4rem;
     --spacing-xl: 8rem;
-    --panel-padding: 0 10%;
+    --panel-padding: 5vw;
 
     /* 3. ANIMATION TOKENS */
     --transition-base: 0.3s ease;
