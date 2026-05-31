@@ -22,10 +22,10 @@
     <div class="perspective-toggle-container" role="group" aria-label="Perspective Toggle">
         <span class="perspective-indicator" aria-hidden="true"></span>
         <button type="button" class="perspective-option active" id="businessLabel" aria-pressed="true">
-            Business Perspective
+            BUSINESS LENS
         </button>
         <button type="button" class="perspective-option" id="techLabel" aria-pressed="false">
-            Technology Perspective
+            TECHNOLOGY LENS
         </button>
     </div>
 
@@ -39,7 +39,7 @@
                 <p perspective="business">&mdash; STATUS: SHIPPED</p>
 
                 <!--  TITLE -->
-                <h1>Hi there! I'm <span class="name-lock"><span class="name-highlight" data-pronunciation="Tee-tik-sha" tabindex="0">Titiksha Wagh</span>,</span> a product thinker who loves building with data & AI.</h1>
+                <h1>Hi there! I'm <span class="name-lock"><span class="name-highlight" data-pronunciation="Tee-tik-sha" tabindex="0">Titiksha Wagh</span>,</span> a product thinker who loves to build with data & AI.</h1>
 
                 <div class="hero-bio" perspective="technology">
                     <p>I have a background in electrical engineering, with a focus on embedded systems and AI. I enjoy building things and experimenting to see how technologies can be turned into practical tools that solve real-world problems. When I'm not vibe coding away in my room, you'll usually find me swimming in the summer or ice skating in the winter.</p>
@@ -91,58 +91,64 @@
                                 </div>
 
                                 <!-- MODULAR BUTTONS -->
+                                <div class="project-actions" perspective="business">
+                                    <a href="https://context-clues-orcin.vercel.app/" class="btn btn-filled" target="_blank" rel="noopener noreferrer">Launch App</a>
+                                    <a href="https://voracious-banjo-71b.notion.site/Context-Clue-362b4fe8467d815d8921d7a68b0e9e59?source=copy_link" class="btn" target="_blank" rel="noopener noreferrer">Case Study</a>
+                                </div>
                                 <div class="project-actions" perspective="technology">
                                     <a href="https://context-clues-orcin.vercel.app/" class="btn btn-filled" target="_blank" rel="noopener noreferrer">Launch App</a>
                                     <a href="http://github.com/TAWagh/Context-Clues" class="btn" target="_blank" rel="noopener noreferrer">Source Code</a>
                                 </div>
-                                <div class="project-actions" perspective="business">
-                                    <a href="https://context-clues-orcin.vercel.app/" class="btn btn-filled" target="_blank" rel="noopener noreferrer">Launch App</a>
-                                    <a href="#" class="btn" target="_blank" rel="noopener noreferrer">Case Study</a>
-                                </div>
                             </div>
                             <div class="project-image-wrapper">
-                                <img src="assets/img/test_img.png" alt="Context Clues project preview" class="project-image-placeholder" loading="lazy">
+                                <img src="assets/img/context_clues_thumbnail.png" alt="Context Clues project preview" class="project-image-placeholder" loading="lazy">
                             </div>
                         </div>
                     </article>
 
-                    <!-- PROJECT 2: COMING SOON -->
-                    <article class="project-panel">
+                    <!-- PROJECT 2-->
+                     <article class="project-panel">
                         <div class="project-content">
                             <div class="project-info">
-                                <span class="project-number" perspective="technology">{ID:"02", DOMAIN:"FINTECH"}</span>
-                                <span class="project-number" perspective="business">&mdash; 02 | COMING SOON</span>
-                                <h2 class="project-title">Coming Soon</h2>
-                                
+                                <span class="project-number" perspective="technology">{ID:"02", DOMAIN:"MarTECH"}</span>
+                                <span class="project-number" perspective="business">&mdash; 02 | MarTECH</span>
+                                <h2 class="project-title">Review Canvas</h2>
+
                                 <!-- MODULAR DESCRIPTION -->
-                                <p class="project-desc" perspective="technology">A new project is currently in development with a focus on practical AI systems, robust architecture, and production-ready execution.</p>
-                                <p class="project-desc" perspective="business">A new case study is in progress, centered on product strategy, cross-team collaboration, and measurable business impact.</p>
+                                <p class="project-desc" perspective="business">Review Canvas is a product proposal for an AI-powered multi-asset review workspace inside Canva Teams, designed for brand managers and creative directors to evaluate entire campaigns in one view. It addresses the gap between how fast content is created and how fragmented review workflows remain — surfacing cross-asset inconsistencies with prioritized AI flags and enabling campaign-wide approvals at scale.</p>
+                                <p class="project-desc" perspective="technology">The technical architecture for Review Canvas centers on a multimodal AI pipeline capable of ingesting visual assets alongside structured brand guidelines to reason across an entire campaign set. Key considerations include vision model selection for design attribute extraction, a cross-asset comparison layer for detecting inconsistencies at scale, and a human-in-the-loop feedback loop that learns from reviewer accept/dismiss signals over time.</p>
 
                                 <!-- MODULAR TAGS -->
-                                <div class="project-tags" perspective="technology">
-                                    <span class="tag">In Progress</span>
-                                    <span class="tag">AI Systems</span>
-                                    <span class="tag">Architecture</span>
-                                </div>
                                 <div class="project-tags" perspective="business">
-                                    <span class="tag">In Progress</span>
-                                    <span class="tag">Strategy</span>
-                                    <span class="tag">Impact</span>
+                                    <span class="tag">Product Strategy</span>
+                                    <span class="tag">Problem Framing</span>
+                                    <span class="tag">User Research</span>
+                                    <span class="tag">Metrics Design</span>
+                                </div>
+                                <div class="project-tags" perspective="technology">
+                                    <span class="tag">Multimodal AI</span>
+                                    <span class="tag">Vision Models</span>
+                                    <span class="tag">HITL</span>
+                                    <span class="tag">System Design</span>
                                 </div>
 
                                 <!-- MODULAR BUTTONS -->
-                                <div class="project-actions" perspective="technology">
-                                    <a href="#contact" class="btn btn-filled" target="_blank" rel="noopener noreferrer">Notify Me</a>
-                                </div>
                                 <div class="project-actions" perspective="business">
-                                    <a href="#contact" class="btn btn-filled" target="_blank" rel="noopener noreferrer">Get Updates</a>
+                                    <a href="https://canva-review-canvas-feature.lovable.app" class="btn btn-filled" target="_blank" rel="noopener noreferrer">Launch Prototype</a>
+                                    <a href="https://voracious-banjo-71b.notion.site/Review-Canvas-Feature-Proposal-362b4fe8467d81728967db49e55754b6?pvs=143" class="btn" target="_blank" rel="noopener noreferrer">Feature Proposal</a>
+                                </div>
+                                <div class="project-actions" perspective="technology">
+                                    <a href="https://canva-review-canvas-feature.lovable.app" class="btn btn-filled" target="_blank" rel="noopener noreferrer">Launch Prototype</a>
+                                    <a href="https://voracious-banjo-71b.notion.site/Review-Canvas-AI-Pipeline-Design-362b4fe8467d816e82a0d68931711881?pvs=74" class="btn" target="_blank" rel="noopener noreferrer">Tech Spec</a>
                                 </div>
                             </div>
                             <div class="project-image-wrapper">
-                                <img src="assets/img/Coming-Soon.png" alt="Coming soon project preview" class="project-image-placeholder" loading="lazy">
+                                <img src="assets/img/review_canvas_thumbnail.png" alt="Review Canvas project preview" class="project-image-placeholder" loading="lazy">
                             </div>
                         </div>
                     </article>
+
+                     <!-- ADDITIONAL PROJECT PANELS CAN BE ADDED HERE IN THE SAME STRUCTURE -->
                 </div>
             </div>
         </section>
@@ -160,7 +166,6 @@
             <div class="contact-links">
                 <a href="https://www.linkedin.com/in/titiksha-wagh/" target="_blank">LinkedIn</a>
                 <a href="https://github.com/TAWagh" target="_blank">GitHub</a>
-                <a href="#" target="_blank">Articles</a>
             </div>
         </section>
     </main>
